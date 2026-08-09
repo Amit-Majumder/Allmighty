@@ -626,8 +626,8 @@ slideshow-component .slideshow.banner.banner--small {
 }
 
 .footer .newsletter-form__field-wrapper .field__input {
-  background: rgba(255, 255, 255, 0.06);
-  border-color: rgba(255, 255, 255, 0.2);
+  border-radius: 0;
+  background: transparent;
   color: rgb(var(--color-foreground));
 }
 
@@ -748,8 +748,10 @@ slideshow-component .slideshow.banner.banner--small {
 }
 
 .giva-footer__newsletter-submit {
+  --buttons-radius: 0;
+  --buttons-radius-outset: 0;
   margin: 1.4rem 0 0;
-  border-radius: 40px;
+  border-radius: 0;
   background: #ffffff;
   color: var(--brand);
   font-weight: 600;
