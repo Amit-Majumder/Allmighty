@@ -747,6 +747,23 @@ slideshow-component .slideshow.banner.banner--small {
   margin: 0;
 }
 
+.giva-footer__newsletter-submit {
+  margin: 1.4rem 0 0;
+  border-radius: 40px;
+  background: #ffffff;
+  color: var(--brand);
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.giva-footer__newsletter-submit:hover {
+  background: #ffffff;
+  color: var(--brand);
+  transform: translateY(-1px);
+}
+
 .giva-footer__commitment {
   margin-top: 4.5rem;
   padding-top: 3.2rem;
