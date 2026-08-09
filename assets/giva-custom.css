@@ -609,15 +609,11 @@ slideshow-component .slideshow.banner.banner--small {
 }
 
 .footer__list-social .list-social__link {
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 50%;
   color: rgb(var(--color-foreground));
 }
 
 .footer__list-social .list-social__link:hover {
-  background: rgb(var(--color-foreground));
-  color: var(--brand);
-  border-color: rgb(var(--color-foreground));
+  color: rgba(var(--color-foreground), 0.6);
 }
 
 .footer__localization .disclosure__button {
