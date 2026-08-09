@@ -743,6 +743,10 @@ slideshow-component .slideshow.banner.banner--small {
   margin: 2.4rem 0 0;
 }
 
+.giva-footer__bottom-right .giva-footer__social {
+  margin: 0;
+}
+
 .giva-footer__commitment {
   margin-top: 4.5rem;
   padding-top: 3.2rem;
