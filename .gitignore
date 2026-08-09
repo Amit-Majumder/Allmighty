@@ -1,0 +1,14 @@
+# Shopify CLI
+.shopifyignore
+static/
+.env
+.env.*
+!.env.example
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+*.sublime-workspace
