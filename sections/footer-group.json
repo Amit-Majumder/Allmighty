@@ -1,1 +1,45 @@
-{"name":"t:sections.footer.name","type":"footer","sections":{"footer":{"type":"footer","settings":{"color_scheme":"scheme-1","newsletter_enable":true,"newsletter_heading":"Subscribe to Almity","newsletter_text":"Get updates on new launches, exclusive deals and styling tips delivered straight to your inbox.","enable_follow_on_shop":true,"show_social":true,"enable_country_selector":false,"enable_language_selector":false,"payment_enable":true,"show_policy":false,"margin_top":0,"padding_top":48,"padding_bottom":48}}},"order":["footer"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "name": "t:sections.footer.name",
+  "type": "footer",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "settings": {
+        "color_scheme": "scheme-1",
+        "about_text": "<p>We bring you a curated collection of gold-plated jewellery that blends elegance, quality, and affordability.</p>",
+        "phone": "1234567890",
+        "email": "allmightyjewellery@gmail.com",
+        "company_heading": "Our Company",
+        "menu_company": "main-menu",
+        "service_heading": "Customer Service",
+        "menu_service": "",
+        "newsletter_enable": true,
+        "newsletter_heading": "Subscribe to Allmighty",
+        "newsletter_text": "Get updates on new launches, exclusive deals and styling tips delivered straight to your inbox.",
+        "enable_follow_on_shop": true,
+        "show_social": true,
+        "commitment_heading": "",
+        "commitment_text": "",
+        "enable_country_selector": false,
+        "enable_language_selector": false,
+        "payment_enable": true,
+        "show_policy": false,
+        "margin_top": 0,
+        "padding_top": 48,
+        "padding_bottom": 48
+      }
+    }
+  },
+  "order": [
+    "footer"
+  ]
+}
