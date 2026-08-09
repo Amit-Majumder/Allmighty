@@ -3,8 +3,6 @@
   --brand-mauve: #d9c8ce;
   --brand-tint: #f4edef;
   --brand-soft: rgba(62, 39, 57, 0.6);
-  --font-heading-family: 'Cormorant Garamond', 'Cormorant', var(--font-heading-family, serif);
-  --font-body-family: 'Jost', var(--font-body-family, sans-serif);
 }
 
 body {
