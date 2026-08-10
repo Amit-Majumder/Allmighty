@@ -134,6 +134,14 @@
             "link": "/collections/all"
           }
         },
+        "category_z8H39A": {
+          "type": "category",
+          "settings": {
+            "image": "shopify://shop_images/Untitled_design.png",
+            "title": "Pendants",
+            "link": ""
+          }
+        },
         "category_RY6J6J": {
           "type": "category",
           "settings": {
@@ -150,6 +158,7 @@
         "cat-3",
         "cat-4",
         "cat-5",
+        "category_z8H39A",
         "category_RY6J6J"
       ],
       "name": "Shop by category",
