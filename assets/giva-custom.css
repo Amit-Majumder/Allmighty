@@ -902,10 +902,6 @@ slideshow-component .slideshow.banner.banner--small {
     transition: max-height 0.35s ease;
   }
 
-  .giva-footer__panel.is-open {
-    max-height: none;
-  }
-
   .giva-footer__panel--static {
     max-height: none;
   }
