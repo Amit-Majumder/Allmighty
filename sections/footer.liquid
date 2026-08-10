@@ -76,10 +76,20 @@
 
       <div class="giva-footer__col giva-footer__col--links">
         {%- if section.settings.company_heading != blank -%}
-          <p class="giva-footer__heading">{{ section.settings.company_heading }}</p>
+          <button
+            type="button"
+            class="giva-footer__heading giva-footer__heading--toggle"
+            aria-expanded="false"
+            aria-controls="FooterCompanyMenu"
+          >
+            {{ section.settings.company_heading }}
+          </button>
         {%- endif -%}
         {%- if company_menu != blank -%}
-          <ul class="giva-footer__menu list-unstyled">
+          <ul
+            id="FooterCompanyMenu"
+            class="giva-footer__menu list-unstyled giva-footer__panel{% if section.settings.company_heading == blank %} giva-footer__panel--static{% endif %}"
+          >
             {%- for link in company_menu.links -%}
               <li>
                 <a href="{{ link.url }}" class="giva-footer__link{% if link.active %} giva-footer__link--active{% endif %}">
@@ -93,9 +103,19 @@
 
       <div class="giva-footer__col giva-footer__col--links">
         {%- if section.settings.service_heading != blank -%}
-          <p class="giva-footer__heading">{{ section.settings.service_heading }}</p>
+          <button
+            type="button"
+            class="giva-footer__heading giva-footer__heading--toggle"
+            aria-expanded="false"
+            aria-controls="FooterServiceMenu"
+          >
+            {{ section.settings.service_heading }}
+          </button>
         {%- endif -%}
-        <ul class="giva-footer__menu list-unstyled">
+        <ul
+          id="FooterServiceMenu"
+          class="giva-footer__menu list-unstyled giva-footer__panel{% if section.settings.service_heading == blank %} giva-footer__panel--static{% endif %}"
+        >
           {%- for policy in shop.policies -%}
             {%- if policy != blank -%}
               <li>
@@ -117,11 +137,22 @@
         <div class="giva-footer__col giva-footer__col--newsletter">
           <div class="giva-footer__newsletter">
             {%- if section.settings.newsletter_heading != blank -%}
-              <p class="giva-footer__heading">{{ section.settings.newsletter_heading }}</p>
+              <button
+                type="button"
+                class="giva-footer__heading giva-footer__heading--toggle"
+                aria-expanded="false"
+                aria-controls="FooterNewsletterPanel"
+              >
+                {{ section.settings.newsletter_heading }}
+              </button>
             {%- endif -%}
-            {%- if section.settings.newsletter_text != blank -%}
-              <p class="giva-footer__newsletter-text">{{ section.settings.newsletter_text }}</p>
-            {%- endif -%}
+            <div
+              id="FooterNewsletterPanel"
+              class="giva-footer__panel{% if section.settings.newsletter_heading == blank %} giva-footer__panel--static{% endif %}"
+            >
+              {%- if section.settings.newsletter_text != blank -%}
+                <p class="giva-footer__newsletter-text">{{ section.settings.newsletter_text }}</p>
+              {%- endif -%}
             {%- form 'customer', id: 'ContactFooter', class: 'giva-footer__form footer__newsletter newsletter-form' -%}
               <input type="hidden" name="contact[tags]" value="newsletter">
               <div class="newsletter-form__field-wrapper">
@@ -183,13 +214,14 @@
                 </h3>
               {%- endif -%}
             {%- endform -%}
-          </div>
 
-          {%- if shop.features.follow_on_shop? and section.settings.enable_follow_on_shop -%}
-            <div class="footer__follow-on-shop">
-              {{ shop | login_button: action: 'follow' }}
+            {%- if shop.features.follow_on_shop? and section.settings.enable_follow_on_shop -%}
+              <div class="footer__follow-on-shop">
+                {{ shop | login_button: action: 'follow' }}
+              </div>
+            {%- endif -%}
             </div>
-          {%- endif -%}
+          </div>
         </div>
       {%- endif -%}
     </div>
@@ -270,6 +302,39 @@
     </div>
   </div>
 </footer>
+
+<script>
+  (function () {
+    var mq = window.matchMedia('(max-width: 749px)');
+    var buttons = document.querySelectorAll('.giva-footer__heading--toggle');
+
+    buttons.forEach(function (button) {
+      button.addEventListener('click', function () {
+        if (!mq.matches) return;
+
+        var panel = document.getElementById(button.getAttribute('aria-controls'));
+        if (!panel) return;
+
+        var isOpen = button.getAttribute('aria-expanded') === 'true';
+        button.setAttribute('aria-expanded', isOpen ? 'false' : 'true');
+
+        if (isOpen) {
+          panel.style.maxHeight = panel.scrollHeight + 'px';
+          void panel.offsetHeight;
+          panel.classList.remove('is-open');
+          panel.style.maxHeight = '0px';
+        } else {
+          panel.classList.add('is-open');
+          panel.style.maxHeight = panel.scrollHeight + 'px';
+          panel.addEventListener('transitionend', function onEnd() {
+            panel.removeEventListener('transitionend', onEnd);
+            panel.style.maxHeight = 'none';
+          });
+        }
+      });
+    });
+  })();
+</script>
 
 {% schema %}
 {

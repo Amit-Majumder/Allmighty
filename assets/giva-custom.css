@@ -705,6 +705,21 @@ slideshow-component .slideshow.banner.banner--small {
   margin: 0 0 2.2rem;
 }
 
+.giva-footer__heading--toggle {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  letter-spacing: inherit;
+  text-transform: inherit;
+  text-align: left;
+  cursor: pointer;
+  appearance: none;
+}
+
 .giva-footer__menu {
   margin: 0;
   padding: 0;
@@ -854,6 +869,45 @@ slideshow-component .slideshow.banner.banner--small {
 
   .giva-footer__bottom-right {
     justify-content: flex-end;
+  }
+}
+
+@media screen and (max-width: 749px) {
+  .giva-footer__heading--toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .giva-footer__heading--toggle::after {
+    content: "";
+    flex: 0 0 auto;
+    width: 0.7rem;
+    height: 0.7rem;
+    border-right: 0.15rem solid currentColor;
+    border-bottom: 0.15rem solid currentColor;
+    transform: rotate(45deg);
+    opacity: 0.6;
+    transition: transform 0.3s ease;
+  }
+
+  .giva-footer__heading--toggle[aria-expanded='true']::after {
+    transform: rotate(-135deg);
+  }
+
+  .giva-footer__panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease;
+  }
+
+  .giva-footer__panel.is-open {
+    max-height: none;
+  }
+
+  .giva-footer__panel--static {
+    max-height: none;
   }
 }
 
