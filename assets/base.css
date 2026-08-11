@@ -2376,6 +2376,11 @@ input[type='checkbox'] {
   .header--has-app {
     grid-template-columns: auto 1fr auto;
   }
+
+  .header--mobile-left {
+    grid-template-columns: auto auto 1fr;
+    grid-template-areas: 'navigation heading icons';
+  }
 }
 
 @media screen and (min-width: 990px) {
