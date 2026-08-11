@@ -2379,7 +2379,7 @@ input[type='checkbox'] {
 
   .header--mobile-left {
     grid-template-columns: auto auto 1fr;
-    grid-template-areas: 'navigation heading icons';
+    grid-template-areas: 'left-icons heading icons';
   }
 }
 
