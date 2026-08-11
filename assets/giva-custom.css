@@ -667,10 +667,12 @@ slideshow-component .slideshow.banner.banner--small {
   border-radius: 0.8rem !important;
   background: transparent;
   color: rgb(var(--color-foreground));
+  border: 1px solid rgba(var(--color-foreground), 0.2) !important;
 }
 
 .giva-footer__form .field__input {
   border-radius: 0.8rem !important;
+  border: 1px solid rgba(var(--color-foreground), 0.2) !important;
 }
 
 .footer .newsletter-form__field-wrapper .field__input::placeholder {
