@@ -2381,6 +2381,10 @@ input[type='checkbox'] {
     margin-top: -36px;
   }
 
+  .collection-list-wrapper {
+    margin-top: -36px;
+  }
+
   .header__icons {
     gap: 0;
     padding-right: 0 !important;
