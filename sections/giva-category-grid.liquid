@@ -45,13 +45,13 @@
                 {%- else -%}
                   {{ 'collection-1' | placeholder_svg_tag: 'giva-cat__image giva-cat__image--placeholder' }}
                 {%- endif -%}
-                {%- if block.settings.title != blank -%}
-                  <span class="giva-cat__title">{{ block.settings.title | escape }}</span>
-                {%- endif -%}
             {%- if block.settings.link != blank -%}
               </a>
             {%- else -%}
               </div>
+            {%- endif -%}
+            {%- if block.settings.title != blank -%}
+              <span class="giva-cat__title">{{ block.settings.title | escape }}</span>
             {%- endif -%}
           </div>
         {%- endfor -%}
