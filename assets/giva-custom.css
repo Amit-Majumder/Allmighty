@@ -331,6 +331,40 @@ p {
   border-radius: 4px;
 }
 
+.card__media {
+  position: relative;
+}
+
+.card__wishlist-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 2;
+}
+
+.card__wishlist-button:hover {
+  background: rgba(255, 255, 255, 1);
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(62, 39, 57, 0.15);
+}
+
+.card__wishlist-button .svg-wrapper {
+  width: 1.8rem;
+  height: 1.8rem;
+  color: var(--brand);
+}
+
 .card .card__content .card__heading {
   font-size: 1.4rem;
 }
