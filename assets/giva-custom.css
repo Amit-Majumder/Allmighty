@@ -93,19 +93,23 @@ p {
     max-width: 60%;
   }
 
+  .header__icons .svg-wrapper {
+    width: 1.6rem;
+    height: 1.6rem;
+  }
+
+  .header__icons .header__icon {
+    height: 3.5rem;
+    width: 3.5rem;
+  }
+
   .header__icon--menu {
-    height: 3.5rem !important;
-    width: 3.5rem !important;
+    height: 3.5rem;
+    width: 3.5rem;
   }
 
   .header__icon--menu span {
-    width: 1.6rem !important;
-    height: 1.6rem !important;
-  }
-
-  .header__icon--menu .svg-wrapper {
-    width: 1.6rem !important;
-    height: 1.6rem !important;
+    height: 100%;
   }
 }
 
