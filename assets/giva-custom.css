@@ -72,8 +72,8 @@ p {
 }
 
 .header {
-  padding-top: 2.4rem;
-  padding-bottom: 2.4rem;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .header-wrapper {
@@ -1408,8 +1408,8 @@ slideshow-component .slideshow.banner.banner--small {
 
 @media screen and (max-width: 749px) {
   .header {
-    padding-top: 1.8rem;
-    padding-bottom: 1.8rem;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   .header__heading-link {
