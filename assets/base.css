@@ -2373,9 +2373,10 @@ input[type='checkbox'] {
 }
 
 @media screen and (max-width: 749px) {
-  .header--has-app {
-    grid-template-columns: auto 1fr auto;
+  .featured-collection + .giva-split-banner {
+    margin-top: 0;
   }
+}
 
   .header__icons {
     gap: 0;
