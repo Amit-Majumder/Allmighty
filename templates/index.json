@@ -325,12 +325,6 @@
     "collection_list": {
       "type": "collection-list",
       "blocks": {
-        "cl-1": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "collection-1"
-          }
-        },
         "cl-2": {
           "type": "featured_collection",
           "settings": {
@@ -345,7 +339,6 @@
         }
       },
       "block_order": [
-        "cl-1",
         "cl-2",
         "cl-3"
       ],
@@ -354,12 +347,12 @@
         "eyebrow": "Explore",
         "title": "Shop by Colour",
         "heading_size": "h2",
-        "image_ratio": "portrait",
-        "columns_desktop": 3,
+        "image_ratio": "square",
+        "columns_desktop": 2,
         "color_scheme": "scheme-4",
         "show_view_all": false,
-        "columns_mobile": "2",
-        "swipe_on_mobile": true,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
         "padding_top": 48,
         "padding_bottom": 48
       }
