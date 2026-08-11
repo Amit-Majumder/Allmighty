@@ -92,6 +92,16 @@ p {
   .header__heading-logo-wrapper {
     max-width: 60%;
   }
+
+  .header__icon--menu {
+    height: 3.5rem;
+    width: 3.5rem;
+  }
+
+  .header__icon--menu .svg-wrapper {
+    width: 1.6rem;
+    height: 1.6rem;
+  }
 }
 
 .header__heading-link .h2 {
