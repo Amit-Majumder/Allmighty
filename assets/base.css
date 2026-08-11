@@ -2382,6 +2382,10 @@ input[type='checkbox'] {
     padding-right: 0 !important;
   }
 
+  .header__icons .header__icon {
+    margin-left: -0.8rem;
+  }
+
   .header--mobile-left {
     grid-template-columns: auto auto 1fr;
     grid-template-areas: 'left-icons heading icons';
