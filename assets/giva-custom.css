@@ -763,6 +763,9 @@ slideshow-component .slideshow.banner.banner--small {
   font: inherit;
   letter-spacing: inherit;
   text-transform: inherit;
+  font-size: 1.6rem !important;
+  font-weight: 700 !important;
+}
   text-align: left;
   cursor: pointer;
   appearance: none;
