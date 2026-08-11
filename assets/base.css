@@ -2373,8 +2373,8 @@ input[type='checkbox'] {
 }
 
 @media screen and (max-width: 749px) {
-  .giva-split {
-    padding-top: 0 !important;
+  .featured-collection + .giva-split-banner {
+    margin-top: 0;
   }
 }
 
