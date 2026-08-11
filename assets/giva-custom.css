@@ -669,6 +669,10 @@ slideshow-component .slideshow.banner.banner--small {
   color: rgb(var(--color-foreground));
 }
 
+.giva-footer__form .field__input {
+  border-radius: 0.8rem;
+}
+
 .footer .newsletter-form__field-wrapper .field__input::placeholder {
   color: rgba(var(--color-foreground), 0.6);
 }
