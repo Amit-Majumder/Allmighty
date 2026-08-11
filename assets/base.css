@@ -2377,6 +2377,10 @@ input[type='checkbox'] {
     grid-template-columns: auto 1fr auto;
   }
 
+  .header__icons {
+    gap: 0.3rem;
+  }
+
   .header--mobile-left {
     grid-template-columns: auto auto 1fr;
     grid-template-areas: 'left-icons heading icons';
