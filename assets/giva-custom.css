@@ -130,6 +130,26 @@ p {
   width: 4.6rem;
 }
 
+.header__icon--favorites {
+  position: relative;
+}
+
+.favorites-count-bubble {
+  position: absolute;
+  top: -0.4rem;
+  right: -0.4rem;
+  background-color: rgb(var(--color-button));
+  color: rgb(var(--color-button-text));
+  height: 1.7rem;
+  width: 1.7rem;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
 .header__icons .header__icon--cart .icon {
   height: 2.2rem;
   width: 2.2rem;
