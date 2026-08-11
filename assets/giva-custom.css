@@ -586,14 +586,13 @@ slideshow-component .slideshow.banner.banner--small {
 }
 
 .newsletter-form__field-wrapper .field__input {
-  border-radius: 40px;
+  border-radius: 0.8rem;
   background: rgb(var(--color-background));
 }
 
 .newsletter-form__button {
   margin-right: 0;
-  border-top-right-radius: 40px;
-  border-bottom-right-radius: 40px;
+  border-radius: 0.8rem;
 }
 
 .newsletter__wrapper {
@@ -665,7 +664,7 @@ slideshow-component .slideshow.banner.banner--small {
 }
 
 .footer .newsletter-form__field-wrapper .field__input {
-  border-radius: 0;
+  border-radius: 0.8rem;
   background: transparent;
   color: rgb(var(--color-foreground));
 }
@@ -802,10 +801,10 @@ slideshow-component .slideshow.banner.banner--small {
 }
 
 .giva-footer__newsletter-submit {
-  --buttons-radius: 0;
-  --buttons-radius-outset: 0;
+  --buttons-radius: 0.8rem;
+  --buttons-radius-outset: 0.8rem;
   margin: 1.4rem 0 0;
-  border-radius: 0;
+  border-radius: 0.8rem;
   background: #ffffff;
   color: var(--brand);
   font-weight: 600;
