@@ -745,8 +745,8 @@ slideshow-component .slideshow.banner.banner--small {
 
 .giva-footer__heading {
   font-family: var(--font-body-family);
-  font-size: 1.6rem;
-  font-weight: 700;
+  font-size: 1.6rem !important;
+  font-weight: 700 !important;
   letter-spacing: 0.24em;
   text-transform: uppercase;
   color: rgb(var(--color-foreground));
