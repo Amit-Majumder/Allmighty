@@ -664,13 +664,13 @@ slideshow-component .slideshow.banner.banner--small {
 }
 
 .footer .newsletter-form__field-wrapper .field__input {
-  border-radius: 0.8rem;
+  border-radius: 0.8rem !important;
   background: transparent;
   color: rgb(var(--color-foreground));
 }
 
 .giva-footer__form .field__input {
-  border-radius: 0.8rem;
+  border-radius: 0.8rem !important;
 }
 
 .footer .newsletter-form__field-wrapper .field__input::placeholder {
