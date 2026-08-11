@@ -93,12 +93,17 @@ p {
     max-width: 60%;
   }
 
-  .header__icons .header__icon--menu {
+  .header__icon--menu {
     height: 3.5rem !important;
     width: 3.5rem !important;
   }
 
-  .header__icons .header__icon--menu .svg-wrapper {
+  .header__icon--menu span {
+    width: 1.6rem !important;
+    height: 1.6rem !important;
+  }
+
+  .header__icon--menu .svg-wrapper {
     width: 1.6rem !important;
     height: 1.6rem !important;
   }
