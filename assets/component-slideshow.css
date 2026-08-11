@@ -50,6 +50,10 @@ slideshow-component .slideshow.banner {
     border-left: var(--text-boxes-border-width) solid rgba(var(--color-foreground), var(--text-boxes-border-opacity));
   }
 
+  .slideshow__text {
+    padding: 1.5rem;
+  }
+
   .banner--mobile-bottom .slideshow__text.banner__box {
     max-width: 100%;
   }
