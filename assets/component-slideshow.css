@@ -51,11 +51,11 @@ slideshow-component .slideshow.banner {
   }
 
   .slideshow__text-wrapper {
-    padding: 0 1.5rem !important;
+    padding: 0 1rem !important;
   }
 
   .slideshow__text {
-    padding: 1.5rem !important;
+    padding: 1rem !important;
   }
 
   .banner--mobile-bottom .slideshow__text.banner__box {
