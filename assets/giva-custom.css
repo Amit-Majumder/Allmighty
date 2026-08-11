@@ -319,6 +319,7 @@ p {
 
 .card__badge {
   margin: 0;
+  display: none;
 }
 
 .card__badge .badge {
