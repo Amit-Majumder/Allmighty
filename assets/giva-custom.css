@@ -337,6 +337,7 @@ p {
 .quick-add__submit {
   min-height: 4.4rem;
   font-size: 1.2rem;
+  border-radius: 0.8rem;
 }
 
 .quick-add__submit:hover {
