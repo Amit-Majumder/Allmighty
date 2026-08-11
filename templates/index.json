@@ -83,6 +83,55 @@
         "accessibility_info": ""
       }
     },
+    "promise_bar": {
+      "type": "giva-promise-bar",
+      "blocks": {
+        "p-1": {
+          "type": "promise",
+          "settings": {
+            "icon": "shipping",
+            "title": "Free Shipping",
+            "text": "On all orders above ₹999"
+          }
+        },
+        "p-2": {
+          "type": "promise",
+          "settings": {
+            "icon": "certified",
+            "title": "Certified Purity",
+            "text": "Hallmarked jewellery"
+          }
+        },
+        "p-3": {
+          "type": "promise",
+          "settings": {
+            "icon": "returns",
+            "title": "Easy Returns",
+            "text": "7 day exchange policy"
+          }
+        },
+        "p-4": {
+          "type": "promise",
+          "settings": {
+            "icon": "secure",
+            "title": "Secure Checkout",
+            "text": "100% protected payments"
+          }
+        }
+      },
+      "block_order": [
+        "p-1",
+        "p-2",
+        "p-3",
+        "p-4"
+      ],
+      "name": "Promises",
+      "settings": {
+        "color_scheme": "scheme-1",
+        "padding_top": 48,
+        "padding_bottom": 48
+      }
+    },
     "category_grid": {
       "type": "giva-category-grid",
       "blocks": {
@@ -171,85 +220,6 @@
         "padding_bottom": 48
       }
     },
-    "promise_bar": {
-      "type": "giva-promise-bar",
-      "blocks": {
-        "p-1": {
-          "type": "promise",
-          "settings": {
-            "icon": "shipping",
-            "title": "Free Shipping",
-            "text": "On all orders above ₹999"
-          }
-        },
-        "p-2": {
-          "type": "promise",
-          "settings": {
-            "icon": "certified",
-            "title": "Certified Purity",
-            "text": "Hallmarked jewellery"
-          }
-        },
-        "p-3": {
-          "type": "promise",
-          "settings": {
-            "icon": "returns",
-            "title": "Easy Returns",
-            "text": "7 day exchange policy"
-          }
-        },
-        "p-4": {
-          "type": "promise",
-          "settings": {
-            "icon": "secure",
-            "title": "Secure Checkout",
-            "text": "100% protected payments"
-          }
-        }
-      },
-      "block_order": [
-        "p-1",
-        "p-2",
-        "p-3",
-        "p-4"
-      ],
-      "name": "Promises",
-      "settings": {
-        "color_scheme": "scheme-1",
-        "padding_top": 24,
-        "padding_bottom": 24
-      }
-    },
-    "featured_collection": {
-      "type": "featured-collection",
-      "name": "Bestseller",
-      "settings": {
-        "collection": "all",
-        "products_to_show": 25,
-        "eyebrow": "Trending",
-        "title": "Bestsellers",
-        "heading_size": "h2",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "columns_desktop": 4,
-        "enable_desktop_slider": true,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "outline",
-        "color_scheme": "scheme-4",
-        "image_ratio": "portrait",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "quick_add": "none",
-        "columns_mobile": "2",
-        "swipe_on_mobile": true,
-        "padding_top": 48,
-        "padding_bottom": 0
-      }
-    },
     "featured_collection_4tqBaK": {
       "type": "featured-collection",
       "name": "New arrivals",
@@ -277,7 +247,7 @@
         "columns_mobile": "2",
         "swipe_on_mobile": true,
         "padding_top": 48,
-        "padding_bottom": 0
+        "padding_bottom": 48
       }
     },
     "split_banner": {
@@ -318,6 +288,36 @@
         "title": "Shop by Story",
         "heading_size": "h2",
         "color_scheme": "scheme-4",
+        "padding_top": 48,
+        "padding_bottom": 48
+      }
+    },
+    "featured_collection": {
+      "type": "featured-collection",
+      "name": "Bestseller",
+      "settings": {
+        "collection": "all",
+        "products_to_show": 25,
+        "eyebrow": "Trending",
+        "title": "Bestsellers",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 4,
+        "enable_desktop_slider": true,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "outline",
+        "color_scheme": "scheme-4",
+        "image_ratio": "portrait",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
         "padding_top": 48,
         "padding_bottom": 48
       }
