@@ -89,6 +89,10 @@ p {
 }
 
 @media screen and (max-width: 749px) {
+  .header__heading-logo-wrapper {
+    max-width: 80%;
+  }
+
   .header__icons {
     transform: scale(0.76);
     transform-origin: right center;
