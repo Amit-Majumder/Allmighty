@@ -88,6 +88,12 @@ p {
   width: auto;
 }
 
+@media screen and (max-width: 749px) {
+  .header__heading-logo-wrapper {
+    max-width: 40%;
+  }
+}
+
 .header__heading-link .h2 {
   font-weight: 500;
 }
