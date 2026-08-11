@@ -338,11 +338,13 @@ p {
   min-height: 4.4rem;
   font-size: 1.2rem;
   border-radius: 0.8rem;
+  transition: all 0.3s ease;
 }
 
 .quick-add__submit:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 24px rgba(62, 39, 57, 0.16);
+  transform: scale(1.02);
+  box-shadow: 0 8px 20px rgba(62, 39, 57, 0.12);
+  border: none;
 }
 
 .card--product:hover .quick-add {
