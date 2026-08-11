@@ -5,12 +5,6 @@
   --brand-soft: rgba(62, 39, 57, 0.6);
 }
 
-.card--card,
-.card--standard .card__inner,
-.card .card__inner .card__media {
-  border-radius: 0 !important;
-}
-
 body {
   letter-spacing: 0.015em;
   background-color: rgb(var(--color-background));
@@ -1119,7 +1113,7 @@ slideshow-component .slideshow.banner.banner--small {
 .giva-cat__link {
   display: block;
   position: relative;
-  border-radius: 0;
+  border-radius: 1.6rem;
   overflow: hidden;
   background: var(--brand-tint);
   transition:
