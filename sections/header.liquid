@@ -285,16 +285,14 @@
         {%- endcase -%}
       {%- endfor -%}
 
-      {%- if customer -%}
-        <a href="/collections/all" class="header__icon header__icon--favorites link focus-inset" id="favorites-icon-bubble" title="My Favorites">
-          <span class="svg-wrapper">{{ 'icon-heart.svg' | inline_asset_content }}</span>
-          <span class="visually-hidden">{{ 'My Favorites' }}</span>
-          <div class="favorites-count-bubble">
-            <span aria-hidden="true">0</span>
-            <span class="visually-hidden">0 favorites</span>
-          </div>
-        </a>
-      {%- endif -%}
+      <a href="/collections/all" class="header__icon header__icon--favorites link focus-inset" id="favorites-icon-bubble" title="My Favorites">
+        <span class="svg-wrapper">{{ 'icon-heart.svg' | inline_asset_content }}</span>
+        <span class="visually-hidden">{{ 'My Favorites' }}</span>
+        <div class="favorites-count-bubble">
+          <span aria-hidden="true">0</span>
+          <span class="visually-hidden">0 favorites</span>
+        </div>
+      </a>
 
       <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart link focus-inset" id="cart-icon-bubble">
         {% if cart == empty %}
