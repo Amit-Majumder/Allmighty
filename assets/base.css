@@ -2381,6 +2381,12 @@ input[type='checkbox'] {
     grid-template-columns: auto auto 1fr;
     grid-template-areas: 'left-icons heading icons';
   }
+
+  .header--mobile-left .header__heading,
+  .header--mobile-left .header__heading-link {
+    text-align: left;
+    justify-self: start;
+  }
 }
 
 @media screen and (min-width: 990px) {
