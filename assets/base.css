@@ -2377,6 +2377,10 @@ input[type='checkbox'] {
     grid-template-columns: auto 1fr auto;
   }
 
+  .giva-split {
+    margin-top: -36px;
+  }
+
   .header__icons {
     gap: 0;
     padding-right: 0 !important;
