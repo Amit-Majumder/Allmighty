@@ -135,20 +135,12 @@
     "category_grid": {
       "type": "giva-category-grid",
       "blocks": {
-        "cat-1": {
+        "cat-3": {
           "type": "category",
           "settings": {
             "image": "shopify://shop_images/Untitled_design.png",
-            "title": "Rings",
-            "link": "/collections/all"
-          }
-        },
-        "cat-2": {
-          "type": "category",
-          "settings": {
-            "image": "shopify://shop_images/Untitled_design.png",
-            "title": "Earrings",
-            "link": "/collections/all"
+            "title": "Bracelets",
+            "link": "shopify://collections/bracelets"
           }
         },
         "category_ziVymc": {
@@ -156,23 +148,7 @@
           "settings": {
             "image": "shopify://shop_images/Untitled_design.png",
             "title": "Bangles",
-            "link": ""
-          }
-        },
-        "cat-3": {
-          "type": "category",
-          "settings": {
-            "image": "shopify://shop_images/Untitled_design.png",
-            "title": "Bracelets",
-            "link": "/collections/all"
-          }
-        },
-        "cat-4": {
-          "type": "category",
-          "settings": {
-            "image": "shopify://shop_images/Untitled_design.png",
-            "title": "Necklaces",
-            "link": "/collections/all"
+            "link": "shopify://collections/bangles"
           }
         },
         "cat-5": {
@@ -180,35 +156,32 @@
           "settings": {
             "image": "shopify://shop_images/Untitled_design.png",
             "title": "Chains",
-            "link": "/collections/all"
+            "link": "shopify://collections/chains"
           }
         },
-        "category_z8H39A": {
+        "cat-4": {
           "type": "category",
           "settings": {
             "image": "shopify://shop_images/Untitled_design.png",
-            "title": "Pendants",
-            "link": ""
+            "title": "Necklaces",
+            "link": "shopify://collections/necklaces"
           }
         },
-        "category_RY6J6J": {
+        "cat-2": {
           "type": "category",
           "settings": {
             "image": "shopify://shop_images/Untitled_design.png",
-            "title": "Sets",
-            "link": ""
+            "title": "Earrings",
+            "link": "shopify://collections/earrings"
           }
         }
       },
       "block_order": [
-        "cat-1",
-        "cat-2",
-        "category_ziVymc",
         "cat-3",
-        "cat-4",
+        "category_ziVymc",
         "cat-5",
-        "category_z8H39A",
-        "category_RY6J6J"
+        "cat-4",
+        "cat-2"
       ],
       "name": "Shop by category",
       "settings": {
@@ -224,7 +197,7 @@
       "type": "featured-collection",
       "name": "New arrivals",
       "settings": {
-        "collection": "all",
+        "collection": "new-arrival",
         "products_to_show": 25,
         "eyebrow": "Fresh",
         "title": "New Arrivals",
@@ -262,7 +235,7 @@
             "title": "Heading 1",
             "text": "Description 1",
             "button_label": "Shop Her",
-            "link": "/collections/all"
+            "link": "shopify://collections/bestseller"
           }
         },
         "sb-2": {
@@ -274,7 +247,7 @@
             "title": "Heading 2",
             "text": "Description 2",
             "button_label": "Shop Him",
-            "link": "/collections/all"
+            "link": "shopify://collections/new-arrival"
           }
         }
       },
@@ -294,9 +267,9 @@
     },
     "featured_collection": {
       "type": "featured-collection",
-      "name": "Bestseller",
+      "name": "Bestsellers",
       "settings": {
-        "collection": "all",
+        "collection": "bestseller",
         "products_to_show": 25,
         "eyebrow": "Trending",
         "title": "Bestsellers",
@@ -377,7 +350,7 @@
           "type": "button",
           "settings": {
             "button_label": "Shop All Jewellery",
-            "button_link": "shopify://collections",
+            "button_link": "shopify://collections/all",
             "button_style_secondary": false,
             "button_label_2": "",
             "button_link_2": "",

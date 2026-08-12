@@ -1140,14 +1140,14 @@ slideshow-component .slideshow.banner.banner--small {
   }
 
   .giva-cat__item {
-    width: 10rem !important;
+    width: 14rem !important;
     max-width: 50vw !important;
   }
 }
 
 .giva-cat__item {
   flex: 0 0 auto;
-  width: 15rem;
+  width: 20rem;
   max-width: 78vw;
   margin: 0;
   scroll-snap-align: start;
