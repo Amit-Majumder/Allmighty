@@ -15,7 +15,17 @@
     {%- endif -%}
 
     {%- if section.blocks.size > 0 -%}
-      <div class="giva-cat__grid">
+      <div class="giva-cat__scroller" data-cat-scroller>
+        <button
+          type="button"
+          class="giva-cat__arrow giva-cat__arrow--prev"
+          name="previous"
+          aria-label="Scroll categories left"
+          disabled
+        >
+          {{- 'icon-caret.svg' | inline_asset_content -}}
+        </button>
+        <div class="giva-cat__grid">
         {%- for block in section.blocks -%}
           <div class="giva-cat__item" {{ block.shopify_attributes }}>
             {%- if block.settings.link != blank -%}
@@ -46,10 +56,57 @@
             {%- endif -%}
           </div>
         {%- endfor -%}
+        </div>
+        <button
+          type="button"
+          class="giva-cat__arrow giva-cat__arrow--next"
+          name="next"
+          aria-label="Scroll categories right"
+        >
+          {{- 'icon-caret.svg' | inline_asset_content -}}
+        </button>
       </div>
     {%- endif -%}
   </div>
 </div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('[data-cat-scroller]').forEach(function (scroller) {
+      var grid = scroller.querySelector('.giva-cat__grid');
+      var prev = scroller.querySelector('.giva-cat__arrow--prev');
+      var next = scroller.querySelector('.giva-cat__arrow--next');
+      if (!grid || !prev || !next) return;
+
+      function update() {
+        var maxLeft = grid.scrollWidth - grid.clientWidth;
+        prev.disabled = grid.scrollLeft <= 1;
+        next.disabled = grid.scrollLeft >= maxLeft - 1;
+      }
+
+      function step() {
+        var card = grid.querySelector('.giva-cat__item');
+        if (!card) return grid.clientWidth;
+        var gap = 0;
+        var columnGap = window.getComputedStyle(grid).columnGap;
+        if (columnGap) gap = parseFloat(columnGap) || 0;
+        return card.offsetWidth + gap;
+      }
+
+      prev.addEventListener('click', function () {
+        grid.scrollBy({ left: -step(), behavior: 'smooth' });
+      });
+
+      next.addEventListener('click', function () {
+        grid.scrollBy({ left: step(), behavior: 'smooth' });
+      });
+
+      grid.addEventListener('scroll', update, { passive: true });
+      window.addEventListener('resize', update);
+      update();
+    });
+  });
+</script>
 
 {% schema %}
 {

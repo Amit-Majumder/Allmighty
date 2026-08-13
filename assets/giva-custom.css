@@ -1069,16 +1069,103 @@ slideshow-component .slideshow.banner.banner--small {
   opacity: 0.35;
 }
 
+.giva-cat__scroller {
+  position: relative;
+}
+
 .giva-cat__grid {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 2rem;
+  display: flex;
+  flex-wrap: nowrap;
+  flex: 1 1 auto;
   min-width: 0;
+  gap: 2rem;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.giva-cat__grid::-webkit-scrollbar {
+  display: none;
+}
+
+.giva-cat__arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+  width: 4.4rem;
+  height: 4.4rem;
+  border-radius: 50%;
+  border: 1px solid rgba(var(--color-foreground), 0.15);
+  background: rgb(var(--color-background));
+  color: rgb(var(--color-foreground));
+  box-shadow: 0 4px 14px rgba(62, 39, 57, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0;
+  opacity: 1;
+  transition: opacity 0.2s ease;
+}
+
+.giva-cat__arrow--prev {
+  left: -4.4rem;
+}
+
+.giva-cat__arrow--next {
+  right: -4.4rem;
+}
+
+.giva-cat__arrow svg {
+  width: 1.4rem;
+  height: 1.4rem;
+}
+
+.giva-cat__arrow--prev svg {
+  transform: rotate(90deg);
+}
+
+.giva-cat__arrow--next svg {
+  transform: rotate(-90deg);
+}
+
+.giva-cat__arrow[disabled] {
+  opacity: 0;
+  pointer-events: none;
+}
+
+@media screen and (max-width: 989px) {
+  .giva-cat__arrow--prev {
+    left: -1rem;
+  }
+
+  .giva-cat__arrow--next {
+    right: -1rem;
+  }
+}
+
+@media screen and (max-width: 749px) {
+  .giva-cat__arrow {
+    width: 3.4rem;
+    height: 3.4rem;
+  }
+
+  .giva-cat__arrow--prev {
+    left: -0.6rem;
+  }
+
+  .giva-cat__arrow--next {
+    right: -0.6rem;
+  }
 }
 
 .giva-cat__item {
-  min-width: 0;
+  flex: 0 0 calc((100% - 8rem) / 5);
   margin: 0;
+  scroll-snap-align: start;
   display: flex;
   flex-direction: column;
 }
@@ -1381,22 +1468,28 @@ slideshow-component .slideshow.banner.banner--small {
 }
 
 @media screen and (max-width: 1199px) {
-  .giva-cat__grid {
-    grid-template-columns: repeat(4, 1fr);
+  .giva-cat__item {
+    flex: 0 0 calc((100% - 6rem) / 4);
   }
 }
 
 @media screen and (max-width: 989px) {
   .giva-cat__grid {
-    grid-template-columns: repeat(3, 1fr);
     gap: 1.4rem;
+  }
+
+  .giva-cat__item {
+    flex: 0 0 calc((100% - 2.8rem) / 3);
   }
 }
 
 @media screen and (max-width: 749px) {
   .giva-cat__grid {
-    grid-template-columns: repeat(2, 1fr);
     gap: 1.2rem;
+  }
+
+  .giva-cat__item {
+    flex: 0 0 calc((100% - 1.2rem) / 2);
   }
 
   .header {
