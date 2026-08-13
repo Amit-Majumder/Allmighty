@@ -712,6 +712,10 @@ slideshow-component .slideshow.banner.banner--small {
   border: 1px solid rgba(var(--color-foreground), 0.2) !important;
 }
 
+.giva-footer__form .field::after {
+  display: none;
+}
+
 .footer .newsletter-form__field-wrapper .field__input::placeholder {
   color: rgba(var(--color-foreground), 0.6);
 }
