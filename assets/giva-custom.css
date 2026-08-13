@@ -701,14 +701,14 @@ slideshow-component .slideshow.banner.banner--small {
 }
 
 .footer .newsletter-form__field-wrapper .field__input {
-  border-radius: 0.8rem !important;
+  border-radius: 0 !important;
   background: transparent;
   color: rgb(var(--color-foreground));
   border: 1px solid rgba(var(--color-foreground), 0.2) !important;
 }
 
 .giva-footer__form .field__input {
-  border-radius: 0.8rem !important;
+  border-radius: 0 !important;
   border: 1px solid rgba(var(--color-foreground), 0.2) !important;
 }
 
@@ -850,10 +850,10 @@ slideshow-component .slideshow.banner.banner--small {
 }
 
 .giva-footer__newsletter-submit {
-  --buttons-radius: 0.8rem;
-  --buttons-radius-outset: 0.8rem;
+  --buttons-radius: 0;
+  --buttons-radius-outset: 0;
   margin: 1.4rem 0 0;
-  border-radius: 0.8rem;
+  border-radius: 0;
   background: #ffffff;
   color: var(--brand);
   font-weight: 600;
