@@ -12,19 +12,19 @@
     "slideshow": {
       "type": "slideshow",
       "blocks": {
-        "slide_ngcC4Y": {
+        "slide_GE9Pmt": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Untitled_design.png",
+            "image": "shopify://shop_images/kikjewelsbanner1920x650traditionalnecklacejewellery_1.png",
             "image_overlay_opacity": 0,
-            "heading": "Image slide 1",
-            "heading_size": "h1",
-            "subheading": "Tell your brand's story through images",
-            "button_label": "Shop Now",
-            "link": "/collections/all",
+            "heading": "",
+            "heading_size": "h0",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
             "button_style_secondary": false,
             "show_text_box": false,
-            "box_align": "middle-left",
+            "box_align": "middle-center",
             "text_alignment": "left",
             "text_alignment_mobile": "left",
             "color_scheme": "scheme-4"
@@ -33,34 +33,34 @@
         "slide_qQQmNQ": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Untitled_design.png",
+            "image": "shopify://shop_images/Final__Neckless_G.jpg",
             "image_overlay_opacity": 0,
-            "heading": "Image slide 2",
+            "heading": "",
             "heading_size": "h1",
-            "subheading": "Tell your brand's story through images",
-            "button_label": "Shop Now",
-            "link": "/collections/all",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
             "button_style_secondary": false,
             "show_text_box": false,
-            "box_align": "middle-left",
+            "box_align": "middle-center",
             "text_alignment": "left",
             "text_alignment_mobile": "left",
             "color_scheme": "scheme-4"
           }
         },
-        "slide_GE9Pmt": {
+        "slide_ngcC4Y": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Untitled_design.png",
+            "image": "shopify://shop_images/images.jpg",
             "image_overlay_opacity": 0,
-            "heading": "Image slide 3",
-            "heading_size": "h0",
-            "subheading": "Tell your brand's story through images",
-            "button_label": "Shop Now",
-            "link": "/collections/all",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
             "button_style_secondary": false,
             "show_text_box": false,
-            "box_align": "middle-left",
+            "box_align": "middle-center",
             "text_alignment": "left",
             "text_alignment_mobile": "left",
             "color_scheme": "scheme-4"
@@ -68,13 +68,13 @@
         }
       },
       "block_order": [
-        "slide_ngcC4Y",
+        "slide_GE9Pmt",
         "slide_qQQmNQ",
-        "slide_GE9Pmt"
+        "slide_ngcC4Y"
       ],
       "settings": {
         "layout": "full_bleed",
-        "slide_height": "small",
+        "slide_height": "adapt_image",
         "slider_visual": "dots",
         "auto_rotate": true,
         "change_slides_speed": 3,
@@ -138,7 +138,6 @@
         "cat-3": {
           "type": "category",
           "settings": {
-            "image": "shopify://shop_images/Untitled_design.png",
             "title": "Bracelets",
             "link": "shopify://collections/bracelets"
           }
@@ -146,7 +145,6 @@
         "category_ziVymc": {
           "type": "category",
           "settings": {
-            "image": "shopify://shop_images/Untitled_design.png",
             "title": "Bangles",
             "link": "shopify://collections/bangles"
           }
@@ -154,7 +152,6 @@
         "cat-5": {
           "type": "category",
           "settings": {
-            "image": "shopify://shop_images/Untitled_design.png",
             "title": "Chains",
             "link": "shopify://collections/chains"
           }
@@ -162,7 +159,6 @@
         "cat-4": {
           "type": "category",
           "settings": {
-            "image": "shopify://shop_images/Untitled_design.png",
             "title": "Necklaces",
             "link": "shopify://collections/necklaces"
           }
@@ -170,7 +166,6 @@
         "cat-2": {
           "type": "category",
           "settings": {
-            "image": "shopify://shop_images/Untitled_design.png",
             "title": "Earrings",
             "link": "shopify://collections/earrings"
           }
@@ -229,7 +224,6 @@
         "sb-1": {
           "type": "banner",
           "settings": {
-            "image": "shopify://shop_images/Untitled_design.png",
             "overlay_opacity": 0,
             "eyebrow": "Label 1",
             "title": "Heading 1",
@@ -241,7 +235,6 @@
         "sb-2": {
           "type": "banner",
           "settings": {
-            "image": "shopify://shop_images/Untitled_design.png",
             "overlay_opacity": 0,
             "eyebrow": "Label 2",
             "title": "Heading 2",
