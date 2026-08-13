@@ -98,7 +98,7 @@ p {
     transform-origin: right center;
   }
 
-  .header__icon--menu {
+  .header__icon--menu span {
     transform: scale(0.76);
     transform-origin: left center;
   }
