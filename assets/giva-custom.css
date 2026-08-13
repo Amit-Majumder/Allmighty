@@ -1251,11 +1251,37 @@ slideshow-component .slideshow.banner.banner--small {
 }
 
 .giva-collection-scroller .slider.slider--desktop .grid__item {
-  flex: 0 0 auto;
-  width: 24rem;
-  max-width: 78vw;
+  flex: 0 0 calc((100% - 8rem) / 5);
+  width: auto;
+  max-width: none;
   margin-left: 0;
   scroll-snap-align: start;
+}
+
+@media screen and (max-width: 1199px) {
+  .giva-collection-scroller .slider.slider--desktop .grid__item {
+    flex: 0 0 calc((100% - 6rem) / 4);
+  }
+}
+
+@media screen and (max-width: 989px) {
+  .giva-collection-scroller .slider.slider--desktop {
+    gap: 1.4rem;
+  }
+
+  .giva-collection-scroller .slider.slider--desktop .grid__item {
+    flex: 0 0 calc((100% - 2.8rem) / 3);
+  }
+}
+
+@media screen and (max-width: 749px) {
+  .giva-collection-scroller .slider.slider--desktop {
+    gap: 1.2rem;
+  }
+
+  .giva-collection-scroller .slider.slider--desktop .grid__item {
+    flex: 0 0 calc((100% - 1.2rem) / 2);
+  }
 }
 
 .giva-collection-scroller .slider-buttons {
