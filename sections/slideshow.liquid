@@ -5,10 +5,14 @@
 {%- liquid
   assign first_slide_image = section.blocks.first.settings.image
   assign first_slide_mobile_image = section.blocks.first.settings.mobile_image
+  assign has_first_slide_image = false
+  if first_slide_image != blank or first_slide_mobile_image != blank
+    assign has_first_slide_image = true
+  endif
   assign mobile_ratio = first_slide_mobile_image.aspect_ratio | default: first_slide_image.aspect_ratio
   assign desktop_ratio = first_slide_image.aspect_ratio | default: first_slide_mobile_image.aspect_ratio
 -%}
-{%- if section.settings.slide_height == 'adapt_image' and (first_slide_image != blank or first_slide_mobile_image != blank) -%}
+{%- if section.settings.slide_height == 'adapt_image' and has_first_slide_image -%}
   {%- style -%}
     @media screen and (max-width: 749px) {
       #Slider-{{ section.id }}::before,
