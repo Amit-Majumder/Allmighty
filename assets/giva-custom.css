@@ -1013,6 +1013,28 @@ slideshow-component .slideshow.banner.banner--small {
   max-width: var(--page-width);
 }
 
+.giva-slideshow__picture {
+  display: block;
+}
+
+.giva-slideshow__picture img {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  transition: opacity 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .animate--ambient > .giva-slideshow__picture img {
+    animation: animateAmbient 30s linear infinite;
+  }
+}
+
 .shopify-section-header-sticky .header-wrapper--border-bottom {
   border-bottom-color: rgba(62, 39, 57, 0.07);
 }
