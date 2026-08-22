@@ -15,7 +15,8 @@
         "slide_GE9Pmt": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/kikjewelsbanner1920x650traditionalnecklacejewellery_1.png",
+            "image": "shopify://shop_images/Intro_Banner-W.png",
+            "mobile_image": "shopify://shop_images/Intro_Banner-M.png",
             "image_overlay_opacity": 0,
             "heading": "",
             "heading_size": "h0",
@@ -23,17 +24,18 @@
             "button_label": "",
             "link": "",
             "button_style_secondary": false,
-            "show_text_box": false,
+            "show_text_box": true,
             "box_align": "middle-center",
-            "text_alignment": "left",
-            "text_alignment_mobile": "left",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
             "color_scheme": "scheme-4"
           }
         },
-        "slide_qQQmNQ": {
+        "slide_tTUqTp": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Final__Neckless_G.jpg",
+            "image": "shopify://shop_images/Durga_Puja_Sale-W.png",
+            "mobile_image": "shopify://shop_images/Durga_Puja_Sale-M.png",
             "image_overlay_opacity": 0,
             "heading": "",
             "heading_size": "h1",
@@ -41,36 +43,17 @@
             "button_label": "",
             "link": "",
             "button_style_secondary": false,
-            "show_text_box": false,
+            "show_text_box": true,
             "box_align": "middle-center",
-            "text_alignment": "left",
-            "text_alignment_mobile": "left",
-            "color_scheme": "scheme-4"
-          }
-        },
-        "slide_ngcC4Y": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/images.jpg",
-            "image_overlay_opacity": 0,
-            "heading": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "show_text_box": false,
-            "box_align": "middle-center",
-            "text_alignment": "left",
-            "text_alignment_mobile": "left",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
             "color_scheme": "scheme-4"
           }
         }
       },
       "block_order": [
         "slide_GE9Pmt",
-        "slide_qQQmNQ",
-        "slide_ngcC4Y"
+        "slide_tTUqTp"
       ],
       "settings": {
         "layout": "full_bleed",
@@ -86,20 +69,36 @@
     "promise_bar": {
       "type": "giva-promise-bar",
       "blocks": {
+        "p-2": {
+          "type": "promise",
+          "settings": {
+            "icon": "certified",
+            "title": "24KT Gold Plated",
+            "text": "Premium jewellery"
+          }
+        },
+        "promise_btqD63": {
+          "type": "promise",
+          "settings": {
+            "icon": "sparkle",
+            "title": "Skin Friendly",
+            "text": "Gentle on your skin"
+          }
+        },
+        "promise_R4rg7t": {
+          "type": "promise",
+          "settings": {
+            "icon": "sparkle",
+            "title": "Long Lasting",
+            "text": "High quality material"
+          }
+        },
         "p-1": {
           "type": "promise",
           "settings": {
             "icon": "shipping",
             "title": "Free Shipping",
             "text": "On all orders above ₹999"
-          }
-        },
-        "p-2": {
-          "type": "promise",
-          "settings": {
-            "icon": "certified",
-            "title": "Certified Purity",
-            "text": "Hallmarked jewellery"
           }
         },
         "p-3": {
@@ -120,8 +119,10 @@
         }
       },
       "block_order": [
-        "p-1",
         "p-2",
+        "promise_btqD63",
+        "promise_R4rg7t",
+        "p-1",
         "p-3",
         "p-4"
       ],
@@ -135,48 +136,71 @@
     "category_grid": {
       "type": "giva-category-grid",
       "blocks": {
-        "cat-3": {
+        "cat-2": {
           "type": "category",
           "settings": {
-            "title": "Bracelets",
-            "link": "shopify://collections/bracelets"
-          }
-        },
-        "category_ziVymc": {
-          "type": "category",
-          "settings": {
-            "title": "Bangles",
-            "link": "shopify://collections/bangles"
+            "image": "shopify://shop_images/Premium24KTGoldPlatedJhumkaChandbaliEarrings-1.1.png",
+            "title": "Earrings",
+            "link": "shopify://collections/earrings"
           }
         },
         "cat-5": {
           "type": "category",
           "settings": {
-            "title": "Chains",
-            "link": "shopify://collections/chains"
+            "image": "shopify://shop_images/Premium_24KT_Gold_Plated_AD_Swirl_Bracelet-1.1.png",
+            "title": "AD Bracelet",
+            "link": "shopify://collections/ad-bracelet"
+          }
+        },
+        "category_aM4aQG": {
+          "type": "category",
+          "settings": {
+            "image": "shopify://shop_images/Premium24KTGoldPlatedADFloralBangles-1.1.png",
+            "title": "Bangles",
+            "link": "shopify://collections/bangles"
+          }
+        },
+        "cat-3": {
+          "type": "category",
+          "settings": {
+            "image": "shopify://shop_images/Premium_24KT_Gold_Plated_Pearl_Halo_Pendant_Set-1.1.png",
+            "title": "Pearl Set",
+            "link": "shopify://collections/pearl-sets"
+          }
+        },
+        "category_WeccRg": {
+          "type": "category",
+          "settings": {
+            "image": "shopify://shop_images/Premium24KTGoldPlatedRubyLayeredLahariChain-1.1.png",
+            "title": "Chain",
+            "link": "shopify://collections/chain"
           }
         },
         "cat-4": {
           "type": "category",
           "settings": {
-            "title": "Necklaces",
-            "link": "shopify://collections/necklaces"
+            "image": "shopify://shop_images/Premium24KTGoldPlatedADLeafClusterPendantChain-1.1.png",
+            "title": "Pendant Chain",
+            "link": "shopify://collections/pendant-chain"
           }
         },
-        "cat-2": {
+        "category_ziVymc": {
           "type": "category",
           "settings": {
-            "title": "Earrings",
-            "link": "shopify://collections/earrings"
+            "image": "shopify://shop_images/Premium_24KT_Gold_Plated_AD_Paisley_Drop_Pendant_Set-1.1.png",
+            "title": "Pendant Necklace Set",
+            "link": "shopify://collections/chains"
           }
         }
       },
       "block_order": [
-        "cat-3",
-        "category_ziVymc",
+        "cat-2",
         "cat-5",
+        "category_aM4aQG",
+        "cat-3",
+        "category_WeccRg",
         "cat-4",
-        "cat-2"
+        "category_ziVymc"
       ],
       "name": "Shop by category",
       "settings": {
@@ -225,10 +249,10 @@
           "type": "banner",
           "settings": {
             "overlay_opacity": 0,
-            "eyebrow": "Label 1",
-            "title": "Heading 1",
-            "text": "Description 1",
-            "button_label": "Shop Her",
+            "eyebrow": "",
+            "title": "",
+            "text": "",
+            "button_label": "Shop Now",
             "link": "shopify://collections/bestseller"
           }
         },
@@ -236,10 +260,10 @@
           "type": "banner",
           "settings": {
             "overlay_opacity": 0,
-            "eyebrow": "Label 2",
-            "title": "Heading 2",
-            "text": "Description 2",
-            "button_label": "Shop Him",
+            "eyebrow": "",
+            "title": "",
+            "text": "",
+            "button_label": "Shop Now",
             "link": "shopify://collections/new-arrival"
           }
         }

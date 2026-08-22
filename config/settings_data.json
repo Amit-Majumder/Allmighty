@@ -9,7 +9,7 @@
  */
 {
   "current": {
-    "logo": "shopify://shop_images/4589fbce-7b27-498d-8ce1-71c256729888.png",
+    "logo": "shopify://shop_images/thinkogic-converted-470855_-_Edited.png",
     "logo_width": 140,
     "type_header_font": "germania_one_n4",
     "heading_scale": 100,
@@ -108,7 +108,7 @@
     "sold_out_badge_color_scheme": "scheme-1",
     "brand_headline": "",
     "brand_description": "<p></p>",
-    "brand_image": "shopify://shop_images/8d42d15b-826c-4a80-87b2-3fb90866c435.png",
+    "brand_image": "shopify://shop_images/a6f2ad09-ab87-4f6d-a3eb-0a7bc1e44fee.png",
     "brand_image_width": 100,
     "social_facebook_link": "https://www.facebook.com",
     "social_instagram_link": "https://www.instagram.com",
@@ -146,13 +146,13 @@
     "color_schemes": {
       "scheme-1": {
         "settings": {
-          "background": "#600830",
+          "background": "#023826",
           "background_gradient": "",
-          "text": "#ffffff",
-          "button": "#ffffff",
-          "button_label": "#600830",
-          "secondary_button_label": "#ffffff",
-          "shadow": "#600830"
+          "text": "#FFFFFF",
+          "button": "#FFFFFF",
+          "button_label": "#023826",
+          "secondary_button_label": "#FFFFFF",
+          "shadow": "#023826"
         }
       },
       "scheme-4": {
@@ -160,10 +160,10 @@
           "background": "#ffffff",
           "background_gradient": "",
           "text": "#000000",
-          "button": "#600830",
+          "button": "#023826",
           "button_label": "#ffffff",
-          "secondary_button_label": "#600830",
-          "shadow": "#600830"
+          "secondary_button_label": "#000000",
+          "shadow": "#000000"
         }
       }
     }
