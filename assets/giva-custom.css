@@ -1167,7 +1167,7 @@ slideshow-component .slideshow.banner.banner--small {
 }
 
 .giva-cat__item {
-  flex: 0 0 calc((100% - 8rem) / 5);
+  flex: 0 0 calc((100% - 10rem) / 6);
   margin: 0;
   scroll-snap-align: start;
   display: flex;
@@ -1497,12 +1497,6 @@ slideshow-component .slideshow.banner.banner--small {
   z-index: 2;
 }
 
-@media screen and (max-width: 1199px) {
-  .giva-cat__item {
-    flex: 0 0 calc((100% - 6rem) / 4);
-  }
-}
-
 @media screen and (max-width: 989px) {
   .giva-cat__grid {
     gap: 1.4rem;
@@ -1519,7 +1513,7 @@ slideshow-component .slideshow.banner.banner--small {
   }
 
   .giva-cat__item {
-    flex: 0 0 calc((100% - 1.2rem) / 2);
+    flex: 0 0 calc((100% - 2.4rem) / 3);
   }
 
   .header {
