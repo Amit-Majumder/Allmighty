@@ -80,7 +80,7 @@
         "promise_btqD63": {
           "type": "promise",
           "settings": {
-            "icon": "sparkle",
+            "icon": "hand-heart",
             "title": "Skin Friendly",
             "text": "Gentle on your skin"
           }
@@ -88,7 +88,7 @@
         "promise_R4rg7t": {
           "type": "promise",
           "settings": {
-            "icon": "sparkle",
+            "icon": "shield-check",
             "title": "Long Lasting",
             "text": "High quality material"
           }
