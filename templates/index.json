@@ -139,7 +139,7 @@
         "cat-2": {
           "type": "category",
           "settings": {
-            "image": "shopify://shop_images/Premium24KTGoldPlatedJhumkaChandbaliEarrings-1.1.png",
+            "image": "shopify://shop_images/Earrings.png",
             "title": "Earrings",
             "link": "shopify://collections/earrings"
           }
@@ -147,7 +147,7 @@
         "cat-5": {
           "type": "category",
           "settings": {
-            "image": "shopify://shop_images/Premium_24KT_Gold_Plated_AD_Swirl_Bracelet-1.1.png",
+            "image": "shopify://shop_images/AD_Bracelet.png",
             "title": "AD Bracelet",
             "link": "shopify://collections/ad-bracelet"
           }
@@ -155,7 +155,7 @@
         "category_aM4aQG": {
           "type": "category",
           "settings": {
-            "image": "shopify://shop_images/Premium24KTGoldPlatedADFloralBangles-1.1.png",
+            "image": "shopify://shop_images/Bangles.png",
             "title": "Bangles",
             "link": "shopify://collections/bangles"
           }
@@ -163,7 +163,7 @@
         "cat-3": {
           "type": "category",
           "settings": {
-            "image": "shopify://shop_images/Premium_24KT_Gold_Plated_Pearl_Halo_Pendant_Set-1.1.png",
+            "image": "shopify://shop_images/Pearl_Set.png",
             "title": "Pearl Set",
             "link": "shopify://collections/pearl-sets"
           }
@@ -171,7 +171,7 @@
         "category_WeccRg": {
           "type": "category",
           "settings": {
-            "image": "shopify://shop_images/Premium24KTGoldPlatedRubyLayeredLahariChain-1.1.png",
+            "image": "shopify://shop_images/Chain.png",
             "title": "Chain",
             "link": "shopify://collections/chain"
           }
@@ -179,7 +179,7 @@
         "cat-4": {
           "type": "category",
           "settings": {
-            "image": "shopify://shop_images/Premium24KTGoldPlatedADLeafClusterPendantChain-1.1.png",
+            "image": "shopify://shop_images/Pendant_Chain.png",
             "title": "Pendant Chain",
             "link": "shopify://collections/pendant-chain"
           }
@@ -187,7 +187,7 @@
         "category_ziVymc": {
           "type": "category",
           "settings": {
-            "image": "shopify://shop_images/Premium_24KT_Gold_Plated_AD_Paisley_Drop_Pendant_Set-1.1.png",
+            "image": "shopify://shop_images/Pendant_Necklace_Set.png",
             "title": "Pendant Necklace Set",
             "link": "shopify://collections/chains"
           }
