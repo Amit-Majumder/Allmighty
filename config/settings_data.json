@@ -9,7 +9,7 @@
  */
 {
   "current": {
-    "logo": "shopify://shop_images/thinkogic-converted-470855_-_Edited.png",
+    "logo": "shopify://shop_images/Brand_Logo.png",
     "logo_width": 140,
     "type_header_font": "germania_one_n4",
     "heading_scale": 100,
@@ -108,7 +108,7 @@
     "sold_out_badge_color_scheme": "scheme-1",
     "brand_headline": "",
     "brand_description": "<p></p>",
-    "brand_image": "shopify://shop_images/a6f2ad09-ab87-4f6d-a3eb-0a7bc1e44fee.png",
+    "brand_image": "shopify://shop_images/Brand_Logo.png",
     "brand_image_width": 100,
     "social_facebook_link": "https://www.facebook.com",
     "social_instagram_link": "https://www.instagram.com",
@@ -148,10 +148,10 @@
         "settings": {
           "background": "#023826",
           "background_gradient": "",
-          "text": "#FFFFFF",
-          "button": "#FFFFFF",
+          "text": "#ffffff",
+          "button": "#ffffff",
           "button_label": "#023826",
-          "secondary_button_label": "#FFFFFF",
+          "secondary_button_label": "#ffffff",
           "shadow": "#023826"
         }
       },
