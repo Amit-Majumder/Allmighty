@@ -1177,7 +1177,7 @@ slideshow-component .slideshow.banner.banner--small {
 .giva-cat__link {
   display: block;
   position: relative;
-  border-radius: 1.6rem;
+  border-radius: 50%;
   overflow: hidden;
   background: var(--brand-tint);
   transition:
