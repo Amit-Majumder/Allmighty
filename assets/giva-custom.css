@@ -1350,7 +1350,7 @@ slideshow-component .slideshow.banner.banner--small {
 
 .giva-promises__grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   gap: 2rem;
 }
 
@@ -1532,8 +1532,21 @@ slideshow-component .slideshow.banner.banner--small {
   }
 
   .giva-promises__grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.8rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
+  .giva-promise {
+    padding: 1.6rem 0.8rem;
+  }
+
+  .giva-promise__title {
+    font-size: 0.9rem;
+    letter-spacing: 0.12em;
+  }
+
+  .giva-promise__text {
+    font-size: 0.9rem;
   }
 
   .giva-split__grid {
