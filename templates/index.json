@@ -204,7 +204,7 @@
       ],
       "name": "Shop by category",
       "settings": {
-        "eyebrow": "Explore",
+        "eyebrow": "Variety",
         "title": "Shop by Category",
         "heading_size": "h2",
         "color_scheme": "scheme-4",
@@ -252,7 +252,7 @@
             "eyebrow": "",
             "title": "",
             "text": "",
-            "button_label": "Shop Now",
+            "button_label": "",
             "link": "shopify://collections/bestseller"
           }
         },
@@ -263,7 +263,7 @@
             "eyebrow": "",
             "title": "",
             "text": "",
-            "button_label": "Shop Now",
+            "button_label": "",
             "link": "shopify://collections/new-arrival"
           }
         }
@@ -272,10 +272,10 @@
         "sb-1",
         "sb-2"
       ],
-      "name": "Shop by story",
+      "name": "Shop by collection",
       "settings": {
-        "eyebrow": "Gift Ideas",
-        "title": "Shop by Story",
+        "eyebrow": "Explore",
+        "title": "Shop by Collection",
         "heading_size": "h2",
         "color_scheme": "scheme-4",
         "padding_top": 48,
@@ -332,10 +332,10 @@
         "cl-2",
         "cl-3"
       ],
-      "name": "Shop by colour",
+      "name": "Shop by budget",
       "settings": {
-        "eyebrow": "Explore",
-        "title": "Shop by Colour",
+        "eyebrow": "Price",
+        "title": "Shop by Budget",
         "heading_size": "h2",
         "image_ratio": "square",
         "columns_desktop": 2,
