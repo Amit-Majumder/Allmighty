@@ -210,7 +210,7 @@
         "category_ziVymc",
         "category_jPiJVE"
       ],
-      "name": "Shop by category",
+      "name": "Shop by Category",
       "settings": {
         "eyebrow": "Variety",
         "title": "Shop by Category",
@@ -222,7 +222,7 @@
     },
     "featured_collection_4tqBaK": {
       "type": "featured-collection",
-      "name": "New arrivals",
+      "name": "New Arrivals",
       "settings": {
         "collection": "new-arrival",
         "products_to_show": 25,
@@ -282,7 +282,7 @@
         "sb-1",
         "sb-2"
       ],
-      "name": "Shop by collection",
+      "name": "Shop by Collection",
       "settings": {
         "eyebrow": "Explore",
         "title": "Shop by Collection",
@@ -354,7 +354,7 @@
         "banner_giRedK",
         "banner_8GW8V6"
       ],
-      "name": "Shop by budget",
+      "name": "Shop by Budget",
       "settings": {
         "eyebrow": "Explore",
         "title": "Shop by Budget",
@@ -397,7 +397,7 @@
         "rt-2",
         "rt-3"
       ],
-      "name": "All jewellery",
+      "name": "All Jewellery",
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
