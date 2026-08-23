@@ -1400,7 +1400,7 @@ slideshow-component .slideshow.banner.banner--small {
 
 .giva-split__card {
   position: relative;
-  min-height: 46rem;
+  aspect-ratio: 3 / 2;
   border-radius: 1.6rem;
   overflow: hidden;
   background: var(--brand-tint);
@@ -1547,10 +1547,6 @@ slideshow-component .slideshow.banner.banner--small {
 
   .giva-split__grid {
     grid-template-columns: 1fr;
-  }
-
-  .giva-split__card {
-    min-height: 40rem;
   }
 
   .giva-split__title {
