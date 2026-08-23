@@ -1014,7 +1014,7 @@ slideshow-component .slideshow.banner.banner--small {
 }
 
 .page-width {
-  max-width: var(--page-width);
+  max-width: 100%;
 }
 
 .giva-slideshow__picture {
@@ -1221,7 +1221,7 @@ slideshow-component .slideshow.banner.banner--small {
 }
 
 .giva-collection-scroller.slider-component-desktop:not(.page-width-desktop) {
-  max-width: var(--page-width);
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding: 0 1.5rem;
