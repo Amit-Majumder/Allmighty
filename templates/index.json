@@ -191,6 +191,13 @@
             "title": "Pendant Necklace Set",
             "link": "shopify://collections/chains"
           }
+        },
+        "category_jPiJVE": {
+          "type": "category",
+          "settings": {
+            "title": "Mangalsutra",
+            "link": ""
+          }
         }
       },
       "block_order": [
@@ -200,7 +207,8 @@
         "cat-3",
         "category_WeccRg",
         "cat-4",
-        "category_ziVymc"
+        "category_ziVymc",
+        "category_jPiJVE"
       ],
       "name": "Shop by category",
       "settings": {
