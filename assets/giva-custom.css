@@ -1175,7 +1175,7 @@ slideshow-component .slideshow.banner.banner--small {
 }
 
 .giva-cat__item {
-  flex: 0 0 calc((100% - 10rem) / 6);
+  flex: 0 0 calc((100% - 14rem) / 8);
   margin: 0;
   scroll-snap-align: start;
   display: flex;
