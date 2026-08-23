@@ -22,7 +22,7 @@
             "heading_size": "h0",
             "subheading": "",
             "button_label": "",
-            "link": "",
+            "link": "shopify://collections/all",
             "button_style_secondary": false,
             "show_text_box": true,
             "box_align": "middle-center",
@@ -41,7 +41,7 @@
             "heading_size": "h1",
             "subheading": "",
             "button_label": "",
-            "link": "",
+            "link": "shopify://collections/all",
             "button_style_secondary": false,
             "show_text_box": true,
             "box_align": "middle-center",
@@ -262,7 +262,7 @@
             "title": "",
             "text": "",
             "button_label": "",
-            "link": "shopify://collections/bestseller"
+            "link": "shopify://collections/gold-plated-jewellery"
           }
         },
         "sb-2": {
@@ -274,7 +274,7 @@
             "title": "",
             "text": "",
             "button_label": "",
-            "link": "shopify://collections/new-arrival"
+            "link": "shopify://collections/ad-jewellery"
           }
         }
       },
@@ -334,7 +334,7 @@
             "title": "",
             "text": "",
             "button_label": "",
-            "link": "shopify://collections/new-arrival"
+            "link": "shopify://collections/under-799"
           }
         },
         "banner_8GW8V6": {
@@ -346,7 +346,7 @@
             "title": "",
             "text": "",
             "button_label": "",
-            "link": "shopify://collections/bestseller"
+            "link": "shopify://collections/under-1499"
           }
         }
       },
