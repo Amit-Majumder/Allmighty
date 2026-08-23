@@ -1499,6 +1499,12 @@ slideshow-component .slideshow.banner.banner--small {
   z-index: 2;
 }
 
+.giva-slideshow__link {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+}
+
 @media screen and (max-width: 989px) {
   .giva-cat__grid {
     gap: 1.4rem;

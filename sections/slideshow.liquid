@@ -228,6 +228,11 @@
             {%- endif -%}
           </div>
         </div>
+        {%- if block.settings.link != blank and block.settings.button_label == blank -%}
+          <a href="{{ block.settings.link }}" class="giva-slideshow__link">
+            <span class="visually-hidden">{{ block.settings.heading | default: 'View collection' | escape }}</span>
+          </a>
+        {%- endif -%}
       </div>
     {%- endfor -%}
   </div>
