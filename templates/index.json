@@ -60,7 +60,7 @@
         "slide_height": "adapt_image",
         "slider_visual": "dots",
         "auto_rotate": true,
-        "change_slides_speed": 3,
+        "change_slides_speed": 5,
         "image_behavior": "none",
         "show_text_below": false,
         "accessibility_info": ""
@@ -248,6 +248,7 @@
         "sb-1": {
           "type": "banner",
           "settings": {
+            "image": "shopify://shop_images/Gold_Jewellery.png",
             "overlay_opacity": 0,
             "eyebrow": "",
             "title": "",
@@ -259,6 +260,7 @@
         "sb-2": {
           "type": "banner",
           "settings": {
+            "image": "shopify://shop_images/AD_Jewellery.png",
             "overlay_opacity": 0,
             "eyebrow": "",
             "title": "",
@@ -312,37 +314,44 @@
         "padding_bottom": 48
       }
     },
-    "collection_list": {
-      "type": "collection-list",
+    "giva_split_banner_b3a7bK": {
+      "type": "giva-split-banner",
       "blocks": {
-        "cl-2": {
-          "type": "featured_collection",
+        "banner_giRedK": {
+          "type": "banner",
           "settings": {
-            "collection": "collection-1"
+            "image": "shopify://shop_images/Under_799.png",
+            "overlay_opacity": 0,
+            "eyebrow": "",
+            "title": "",
+            "text": "",
+            "button_label": "",
+            "link": "shopify://collections/new-arrival"
           }
         },
-        "cl-3": {
-          "type": "featured_collection",
+        "banner_8GW8V6": {
+          "type": "banner",
           "settings": {
-            "collection": "collection-1"
+            "image": "shopify://shop_images/Under_1499.png",
+            "overlay_opacity": 0,
+            "eyebrow": "",
+            "title": "",
+            "text": "",
+            "button_label": "",
+            "link": "shopify://collections/bestseller"
           }
         }
       },
       "block_order": [
-        "cl-2",
-        "cl-3"
+        "banner_giRedK",
+        "banner_8GW8V6"
       ],
       "name": "Shop by budget",
       "settings": {
-        "eyebrow": "Price",
+        "eyebrow": "Explore",
         "title": "Shop by Budget",
         "heading_size": "h2",
-        "image_ratio": "square",
-        "columns_desktop": 2,
         "color_scheme": "scheme-4",
-        "show_view_all": false,
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
         "padding_top": 48,
         "padding_bottom": 48
       }
@@ -398,7 +407,7 @@
     "featured_collection_4tqBaK",
     "split_banner",
     "featured_collection",
-    "collection_list",
+    "giva_split_banner_b3a7bK",
     "rich_text"
   ]
 }
