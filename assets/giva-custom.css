@@ -866,6 +866,7 @@ slideshow-component .slideshow.banner.banner--small {
 .giva-footer__newsletter-submit {
   --buttons-radius: 0;
   --buttons-radius-outset: 0;
+  width: auto;
   margin: 1.4rem 1px 0;
   border-radius: 0;
   background: #ffffff;
