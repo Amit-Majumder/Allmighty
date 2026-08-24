@@ -1505,6 +1505,33 @@ slideshow-component .slideshow.banner.banner--small {
   z-index: 2;
 }
 
+.main-page-title--center {
+  text-align: center;
+}
+
+.contact__button {
+  display: flex;
+  justify-content: center;
+}
+
+.page-width--narrow {
+  max-width: none;
+}
+
+@media screen and (min-width: 750px) {
+  .page-width--narrow {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .page-width--narrow {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+
 @media screen and (max-width: 989px) {
   .giva-cat__grid {
     gap: 1.4rem;
