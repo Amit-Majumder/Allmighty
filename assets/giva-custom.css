@@ -730,6 +730,10 @@ slideshow-component .slideshow.banner.banner--small {
   align-items: stretch;
 }
 
+.giva-footer__form .newsletter-form__field-wrapper {
+  max-width: none;
+}
+
 .footer .newsletter-form__field-wrapper .field__input::placeholder {
   color: rgba(var(--color-foreground), 0.6);
 }
