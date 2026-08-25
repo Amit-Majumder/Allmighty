@@ -195,8 +195,9 @@
         "category_jPiJVE": {
           "type": "category",
           "settings": {
+            "image": "shopify://shop_images/Premium24KTGoldPlatedFloralSwirlMangalsutra-1.1.png",
             "title": "Mangalsutra",
-            "link": ""
+            "link": "shopify://collections/mangalsutra"
           }
         }
       },
