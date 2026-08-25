@@ -107,13 +107,13 @@
                 {%- endif -%}
               </div>
             </div>
+          {%- endif -%}
+          <div class="card__content">
             <button class="card__wishlist-button" aria-label="Add to wishlist" aria-pressed="false" data-wishlist-handle="{{ card_product.handle }}">
               <span class="svg-wrapper">
                 {{- 'icon-heart.svg' | inline_asset_content -}}
               </span>
             </button>
-          {%- endif -%}
-          <div class="card__content">
             <div class="card__information">
               <h3
                 class="card__heading"
