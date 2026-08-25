@@ -1281,6 +1281,38 @@ slideshow-component .slideshow.banner.banner--small {
   scroll-snap-align: start;
 }
 
+.giva-collection-scroller .grid__item {
+  display: flex;
+}
+
+.giva-collection-scroller .grid__item > product-component,
+.giva-collection-scroller .card-wrapper {
+  display: flex;
+  width: 100%;
+}
+
+.giva-collection-scroller .card-wrapper > .card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.giva-collection-scroller .card > .card__content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.giva-collection-scroller .card__information {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.giva-collection-scroller .card__information > .card-information {
+  margin-top: auto;
+}
+
 @media screen and (max-width: 989px) {
   .giva-collection-scroller .slider.slider--desktop {
     gap: 1.4rem;
