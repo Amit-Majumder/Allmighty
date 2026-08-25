@@ -109,11 +109,6 @@
             </div>
           {%- endif -%}
           <div class="card__content">
-            <button class="card__wishlist-button" aria-label="Add to wishlist" aria-pressed="false" data-wishlist-handle="{{ card_product.handle }}">
-              <span class="svg-wrapper">
-                {{- 'icon-heart.svg' | inline_asset_content -}}
-              </span>
-            </button>
             <div class="card__information">
               <h3
                 class="card__heading"
@@ -151,6 +146,11 @@
           </div>
         </div>
         <div class="card__content">
+          <button class="card__wishlist-button" aria-label="Add to wishlist" aria-pressed="false" data-wishlist-handle="{{ card_product.handle }}">
+            <span class="svg-wrapper">
+              {{- 'icon-heart.svg' | inline_asset_content -}}
+            </span>
+          </button>
           <div class="card__information">
             <h3
               class="card__heading{% if card_product.featured_media or settings.card_style == 'standard' %} h5{% endif %}"
