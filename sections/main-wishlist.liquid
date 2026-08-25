@@ -1,0 +1,196 @@
+{{ 'component-card.css' | asset_url | stylesheet_tag }}
+{{ 'component-price.css' | asset_url | stylesheet_tag }}
+{{ 'quick-add.css' | asset_url | stylesheet_tag }}
+
+{% style %}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{% endstyle %}
+
+<div class="giva-wishlist color-{{ section.settings.color_scheme }} gradient">
+  <div class="page-width section-{{ section.id }}-padding">
+    <h1 class="giva-wishlist__title main-page-title">{{ page.title | escape }}</h1>
+    <p class="giva-wishlist__empty giva-wishlist--hidden" data-wishlist-empty>
+      Your wishlist is empty. Tap the heart on any product to save it here.
+    </p>
+    <ul id="giva-wishlist-grid" class="grid product-grid grid--4-col-desktop grid--2-col-tablet-down" role="list"></ul>
+  </div>
+</div>
+
+<template id="giva-wishlist-card-template">
+  <li class="grid__item">
+    <product-component>
+      <div class="card-wrapper product-card-wrapper">
+        <div class="card card--standard card--media">
+          <div class="card__inner ratio" style="--ratio-percent: 100%;">
+            <div class="card__media">
+              <div class="media media--transparent media--hover-effect">
+                <img class="motion-reduce" alt="" width="533" height="533">
+              </div>
+            </div>
+            <button class="card__wishlist-button is-active" aria-label="Remove from wishlist">
+              <span class="svg-wrapper">{{ 'icon-heart.svg' | inline_asset_content }}</span>
+            </button>
+          </div>
+          <div class="card__content">
+            <div class="card__information">
+              <h3 class="card__heading h5"><a class="full-unstyled-link"></a></h3>
+              <div class="card-information">
+                <span class="price price--current"></span>
+              </div>
+            </div>
+            <div class="quick-add no-js-hidden">
+              <product-form>
+                <form method="post" action="{{ routes.cart_add_url }}" accept-charset="UTF-8">
+                  <input type="hidden" name="form_type" value="product">
+                  <input type="hidden" name="utf8" value="✓">
+                  <input type="hidden" name="id" value="">
+                  <input type="hidden" name="quantity" value="1">
+                  <button type="submit" class="quick-add__submit button button--full-width button--secondary" aria-haspopup="dialog">Add to cart</button>
+                </form>
+              </product-form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </product-component>
+  </li>
+</template>
+
+<script src="{{ 'wishlist.js' | asset_url }}" defer="defer"></script>
+<script>
+  (function () {
+    'use strict';
+
+    function money(cents) {
+      return new Intl.NumberFormat({{ localization.country.currency.iso_code | json }}, { style: 'currency', currency: {{ localization.country.currency.iso_code | json }} }).format(cents / 100);
+    }
+
+    function render() {
+      var grid = document.getElementById('giva-wishlist-grid');
+      var emptyMsg = document.querySelector('[data-wishlist-empty]');
+      if (!grid) return;
+      grid.innerHTML = '';
+      var items = window.GivaWishlist ? window.GivaWishlist.getList() : [];
+
+      if (!items.length) {
+        if (emptyMsg) emptyMsg.classList.remove('giva-wishlist--hidden');
+        return;
+      }
+      if (emptyMsg) emptyMsg.classList.add('giva-wishlist--hidden');
+
+      var template = document.getElementById('giva-wishlist-card-template');
+
+      items.forEach(function (item) {
+        fetch('/products/' + item.handle + '.js')
+          .then(function (res) { return res.ok ? res.json() : Promise.reject(res); })
+          .then(function (product) {
+            var node = template.content.cloneNode(true);
+            node.querySelector('li').setAttribute('data-wishlist-handle-item', product.handle);
+            var link = node.querySelector('.card__heading a');
+            link.textContent = product.title;
+            link.href = product.url;
+            var img = node.querySelector('.card__media img');
+            img.src = product.featured_image;
+            img.alt = product.title;
+            node.querySelector('.price').textContent = money(product.price);
+            var form = node.querySelector('form');
+            node.querySelector('[name="id"]').value = product.variants[0].id;
+            var heartBtn = node.querySelector('.card__wishlist-button');
+            heartBtn.setAttribute('data-wishlist-handle', product.handle);
+            form.addEventListener('submit', function (event) {
+              event.preventDefault();
+              var submit = form.querySelector('[type="submit"]');
+              submit.setAttribute('aria-busy', 'true');
+              fetch('{{ routes.cart_add_url }}.js', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ items: [{ id: product.variants[0].id, quantity: 1 }] })
+              })
+                .then(function (res) { return res.ok ? res.json() : Promise.reject(res); })
+                .then(function () {
+                  submit.removeAttribute('aria-busy');
+                  showToast('Added to cart');
+                  return fetch('/cart.js').then(function (r) { return r.json(); });
+                })
+                .then(function (cart) {
+                  document.querySelectorAll('.cart-count-bubble span[aria-hidden]').forEach(function (el) {
+                    el.textContent = cart.item_count;
+                  });
+                })
+                .catch(function () {
+                  submit.removeAttribute('aria-busy');
+                  showToast('Could not add to cart');
+                });
+            });
+            heartBtn.addEventListener('click', function () {
+              var li = heartBtn.closest('li');
+              li.remove();
+              if (!grid.children.length && emptyMsg) {
+                emptyMsg.classList.remove('giva-wishlist--hidden');
+              }
+              updateCounters();
+            });
+            grid.appendChild(node);
+          })
+          .catch(function () {
+            window.GivaWishlist.removeItem(item.handle);
+          });
+      });
+    }
+
+    function updateCounters() {
+      document.querySelectorAll('.wishlist-count-bubble').forEach(function (el) {
+        var count = window.GivaWishlist ? window.GivaWishlist.getList().length : 0;
+        el.textContent = count > 99 ? '99+' : String(count);
+        el.classList.toggle('is-empty', count === 0);
+      });
+    }
+
+    document.addEventListener('DOMContentLoaded', render);
+    document.addEventListener('giva:wishlist-change', updateCounters);
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Wishlist",
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Color scheme",
+      "default": "scheme-1"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Top padding",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Bottom padding",
+      "default": 36
+    }
+  ]
+}
+{% endschema %}
