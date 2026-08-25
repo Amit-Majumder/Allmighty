@@ -1289,7 +1289,9 @@ slideshow-component .slideshow.banner.banner--small {
 
 .giva-collection-scroller .grid__item > product-component,
 .giva-collection-scroller .card-wrapper,
+#product-grid .grid__item > product-component,
 #product-grid .card-wrapper,
+.related-products .product-grid .grid__item > product-component,
 .related-products .product-grid .card-wrapper {
   display: flex;
   width: 100%;
