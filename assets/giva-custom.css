@@ -1311,9 +1311,9 @@ slideshow-component .slideshow.banner.banner--small {
   flex-grow: 1;
 }
 
-.giva-collection-scroller .card__information,
-#product-grid .card__information,
-.related-products .product-grid .card__information {
+.giva-collection-scroller .card > .card__content > .card__information,
+#product-grid .card > .card__content > .card__information,
+.related-products .product-grid .card > .card__content > .card__information {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
