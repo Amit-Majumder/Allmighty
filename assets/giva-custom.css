@@ -246,10 +246,7 @@ p {
   }
 
   .header__search .search-modal__close-button {
-    position: absolute;
-    right: 1rem;
-    top: 50%;
-    transform: translateY(-50%);
+    display: none;
   }
 }
 
