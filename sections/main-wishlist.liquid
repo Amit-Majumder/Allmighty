@@ -144,6 +144,12 @@
           })
           .catch(function () {
             window.GivaWishlist.removeItem(item.handle);
+            setTimeout(function () {
+              if (!grid.children.length && emptyMsg) {
+                emptyMsg.classList.remove('giva-wishlist--hidden');
+              }
+              updateCounters();
+            }, 300);
           });
       });
     }
