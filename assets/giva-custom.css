@@ -270,13 +270,13 @@ p {
 }
 
 .card__inner {
-  border-radius: 1.4rem;
+  border-radius: 0;
   overflow: hidden;
   background: var(--brand-tint);
 }
 
 .card__media .media {
-  border-radius: 1.4rem;
+  border-radius: 0;
   overflow: hidden;
   background: var(--brand-tint);
 }
