@@ -400,14 +400,17 @@ p {
 
 .wishlist-count-bubble {
   position: absolute;
-  top: 0.3rem;
-  right: 0.2rem;
+  top: auto;
+  right: auto;
+  bottom: 0.8rem;
+  left: 2.2rem;
   height: 1.7rem;
   width: 1.7rem;
   border-radius: 100%;
   background-color: #d6336c;
   color: rgb(255, 255, 255);
-  font-size: 1.1rem;
+  font-size: 0.9rem;
+  line-height: calc(1 + 0.1 / var(--font-body-scale));
   display: flex;
   align-items: center;
   justify-content: center;
