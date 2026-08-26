@@ -377,16 +377,26 @@ p {
   color: var(--brand);
 }
 
+.card__wishlist-button .heart-outline,
 .card__wishlist-button .heart-fill {
   display: none;
+  width: 100%;
+  height: 100%;
 }
 
-.card__wishlist-button.is-active .heart-outline {
-  display: none;
+.card__wishlist-button:not(.is-active) .heart-outline {
+  display: block;
 }
 
 .card__wishlist-button.is-active .heart-fill {
   display: block;
+}
+
+.card__wishlist-button .heart-outline svg,
+.card__wishlist-button .heart-fill svg {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .card__wishlist-button.is-active .svg-wrapper {
