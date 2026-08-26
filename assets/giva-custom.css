@@ -201,41 +201,26 @@ p {
 }
 
 @media screen and (max-width: 989px) {
-  .header__search {
-    overflow: visible;
-  }
-
-  .header__search details {
-    overflow: visible;
-  }
-
-  .header__search details[open] ~ .header__icons,
-  .header__search:has(details[open]) ~ .header__icons,
-  .header__icons:has(.header__search details[open]) {
-    transform: none !important;
+  .header {
+    position: relative;
   }
 
   .header__search details[open] > .search-modal {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
-    width: 100%;
-    height: auto !important;
-    min-height: 0 !important;
-    max-height: none;
-    z-index: 1000;
+    height: 100%;
+    z-index: 100;
     background: var(--gradient-background, #fff);
     border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.08);
-    box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.1);
     overflow: visible;
     animation: none;
   }
 
   .header__search .search-modal__content {
     padding: 0 1.5rem;
-    min-height: 0;
-    height: auto;
+    height: 100%;
     position: relative;
   }
 
