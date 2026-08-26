@@ -201,47 +201,30 @@ p {
 }
 
 @media screen and (max-width: 989px) {
-  .header {
-    position: relative;
-  }
-
-  .header__icons {
-    overflow: visible;
-    position: static;
-  }
-
-  .header__search {
-    overflow: visible;
-    position: static;
-  }
-
-  .header__search details {
-    overflow: visible;
-    position: static;
-  }
-
-  .header__search:has(details[open]) {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    z-index: 100;
-    max-width: none;
-    width: auto;
-    background: var(--gradient-background, #fff);
-    border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.08);
+  .header__icons:has(.header__search details[open]) {
+    transform: none !important;
   }
 
   .header__search details[open] > .search-modal {
-    height: 100%;
-    animation: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    min-height: 0;
+    max-height: 6rem;
+    z-index: 1000;
+    background: var(--gradient-background, #fff);
+    border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.08);
+    box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.1);
     overflow: visible;
+    animation: none;
   }
 
   .header__search .search-modal__content {
     padding: 0 1.5rem;
-    height: 100%;
+    min-height: 0;
+    height: auto;
     position: relative;
   }
 
