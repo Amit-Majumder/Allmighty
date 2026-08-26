@@ -205,6 +205,19 @@ p {
     position: relative;
   }
 
+  .header__icons {
+    overflow: visible;
+    position: static;
+  }
+
+  .header__search {
+    overflow: visible;
+  }
+
+  .header__search details {
+    overflow: visible;
+  }
+
   .header__search details[open] > .search-modal {
     position: absolute;
     top: 0;
