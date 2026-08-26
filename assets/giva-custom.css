@@ -194,6 +194,11 @@ p {
   outline: none;
 }
 
+.search-modal .field:after {
+  box-shadow: none;
+  border-radius: 40px;
+}
+
 @media screen and (max-width: 989px) {
   .header__search {
     overflow: visible;
