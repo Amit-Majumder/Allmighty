@@ -377,6 +377,18 @@ p {
   color: var(--brand);
 }
 
+.card__wishlist-button .heart-fill {
+  display: none;
+}
+
+.card__wishlist-button.is-active .heart-outline {
+  display: none;
+}
+
+.card__wishlist-button.is-active .heart-fill {
+  display: block;
+}
+
 .card__wishlist-button.is-active .svg-wrapper {
   color: #d6336c;
   animation: giva-heart-pop 0.35s ease;

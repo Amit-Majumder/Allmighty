@@ -40,7 +40,10 @@
           </div>
           <div class="card__content">
             <button class="card__wishlist-button is-active" aria-label="Remove from wishlist">
-              <span class="svg-wrapper">{{ 'icon-heart.svg' | inline_asset_content }}</span>
+              <span class="svg-wrapper">
+                <span class="heart-outline">{{ 'icon-heart.svg' | inline_asset_content }}</span>
+                <span class="heart-fill">{{ 'icon-heart-fill.svg' | inline_asset_content }}</span>
+              </span>
             </button>
             <div class="card__information">
               <h3 class="card__heading h5"><a class="full-unstyled-link"></a></h3>
