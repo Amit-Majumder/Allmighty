@@ -453,6 +453,7 @@ p {
 }
 
 .giva-wishlist__empty {
+  text-align: center;
   font-size: 1.5rem;
   color: rgba(var(--color-foreground), 0.7);
 }
