@@ -215,7 +215,8 @@ p {
     left: 0;
     right: 0;
     width: 100%;
-    height: auto;
+    height: auto !important;
+    min-height: 0 !important;
     z-index: 1000;
     background: var(--gradient-background, #fff);
     border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.08);
