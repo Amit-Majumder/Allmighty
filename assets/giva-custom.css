@@ -187,6 +187,43 @@ p {
   background: var(--brand-tint);
 }
 
+.search-modal .field__input:focus,
+.search-modal .field__input:focus-visible {
+  box-shadow: none;
+  border-radius: 40px;
+  outline: none;
+}
+
+@media screen and (max-width: 989px) {
+  .header__search details[open] > .search-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: auto;
+    z-index: 1000;
+    background: var(--gradient-background, #fff);
+    border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.08);
+    box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.1);
+  }
+
+  .header__search .search-modal__content {
+    padding: 0 1.5rem;
+    min-height: 5.6rem;
+  }
+
+  .header__search .search-modal__form {
+    max-width: none;
+  }
+
+  .header__search .search-modal__close-button {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
 .header__search .search__button .icon {
   height: 1.8rem;
   width: 1.8rem;
