@@ -217,6 +217,7 @@ p {
     width: 100%;
     height: auto !important;
     min-height: 0 !important;
+    max-height: none;
     z-index: 1000;
     background: var(--gradient-background, #fff);
     border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.08);
@@ -227,7 +228,8 @@ p {
 
   .header__search .search-modal__content {
     padding: 0 1.5rem;
-    min-height: 5.6rem;
+    min-height: 0;
+    height: auto;
     position: relative;
   }
 
