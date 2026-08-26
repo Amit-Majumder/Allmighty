@@ -1,6 +1,8 @@
 (function () {
   'use strict';
 
+  if (window.GivaWishlist) return;
+
   var KEY = 'giva-wishlist-v1';
 
   function getList() {
