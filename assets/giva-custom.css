@@ -203,6 +203,12 @@ p {
     overflow: visible;
   }
 
+  .header__search details[open] ~ .header__icons,
+  .header__search:has(details[open]) ~ .header__icons,
+  .header__icons:has(.header__search details[open]) {
+    transform: none !important;
+  }
+
   .header__search details[open] > .search-modal {
     position: fixed;
     top: 0;
