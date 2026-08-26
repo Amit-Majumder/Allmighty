@@ -1835,8 +1835,10 @@ slideshow-component .slideshow.banner.banner--small {
 
 @media screen and (max-width: 989px) {
   .drawer__inner {
-    width: 100%;
+    width: 100vw;
+    min-width: 100vw;
     max-width: none;
     border: none;
+    padding: 0 1.5rem;
   }
 }
