@@ -212,23 +212,31 @@ p {
 
   .header__search {
     overflow: visible;
+    position: static;
   }
 
   .header__search details {
     overflow: visible;
+    position: static;
   }
 
-  .header__search details[open] > .search-modal {
+  .header__search:has(details[open]) {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     height: 100%;
     z-index: 100;
+    max-width: none;
+    width: auto;
     background: var(--gradient-background, #fff);
     border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.08);
-    overflow: visible;
+  }
+
+  .header__search details[open] > .search-modal {
+    height: 100%;
     animation: none;
+    overflow: visible;
   }
 
   .header__search .search-modal__content {
