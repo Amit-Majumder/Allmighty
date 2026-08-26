@@ -194,7 +194,8 @@ p {
   outline: none;
 }
 
-.search-modal .field:after {
+.search-modal .field:after,
+.search-modal .field:hover.field:after {
   box-shadow: none;
   border-radius: 40px;
 }
