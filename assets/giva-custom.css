@@ -1832,3 +1832,11 @@ slideshow-component .slideshow.banner.banner--small {
     max-width: 30rem;
   }
 }
+
+@media screen and (max-width: 989px) {
+  .drawer__inner {
+    width: 100%;
+    max-width: none;
+    border: none;
+  }
+}
