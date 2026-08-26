@@ -210,6 +210,10 @@ p {
     overflow: visible;
   }
 
+  .header__icons:has(.header__search details[open]) {
+    transform: none !important;
+  }
+
   .header__search {
     overflow: visible;
   }
