@@ -12,6 +12,7 @@
     "main": {
       "type": "main-search",
       "settings": {
+        "color_scheme": "scheme-4",
         "columns_desktop": 4,
         "columns_mobile": "2",
         "image_ratio": "square",
