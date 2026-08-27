@@ -9,6 +9,12 @@
  */
 {
   "sections": {
+    "banner": {
+      "type": "page-banner",
+      "settings": {
+        "color_scheme": "scheme-4"
+      }
+    },
     "main": {
       "type": "main-search",
       "settings": {
@@ -32,6 +38,7 @@
     }
   },
   "order": [
+    "banner",
     "main"
   ]
 }
