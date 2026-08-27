@@ -9,12 +9,18 @@
  */
 {
   "sections": {
+    "banner": {
+      "type": "page-banner",
+      "settings": {
+        "color_scheme": "scheme-4"
+      }
+    },
     "main": {
       "type": "main-page",
       "settings": {
         "color_scheme": "scheme-4",
-        "padding_top": 48,
-        "padding_bottom": 48
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "form": {
@@ -29,6 +35,7 @@
     }
   },
   "order": [
+    "banner",
     "main",
     "form"
   ]
