@@ -281,6 +281,7 @@
       "remove_title": "{{ title }} kanalını kaldır",
       "note": "Siparişe özel talimatlar",
       "checkout": "Ödeme",
+      "view_cart": "Sepeti görüntüle",
       "empty": "Sepetiniz boş",
       "product_disclosure": "Ürün bildirimi",
       "product_disclosures": "Ürün bildirimleri",

@@ -301,6 +301,7 @@
       "remove_title": "Odstrani izdelek {{ title }}",
       "note": "Posebna navodila za naročilo",
       "checkout": "Zaključi nakup",
+      "view_cart": "Prikaži košarico",
       "empty": "Vaša košarica je prazna",
       "product_disclosure": "Razkritje o izdelku",
       "product_disclosures": "Razkritja o izdelku",

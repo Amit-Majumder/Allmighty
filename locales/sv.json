@@ -281,6 +281,7 @@
       "remove_title": "Ta bort {{ title }}",
       "note": "Beställ särskilda instruktioner",
       "checkout": "Gå till kassan",
+      "view_cart": "Visa varukorg",
       "empty": "Din varukorg är tom",
       "product_disclosure": "Produktupplysning",
       "product_disclosures": "Produktupplysningar",

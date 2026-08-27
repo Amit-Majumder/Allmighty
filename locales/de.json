@@ -281,6 +281,7 @@
       "remove_title": "{{ title }} entfernen",
       "note": "Spezielle Bestellanweisungen",
       "checkout": "Auschecken",
+      "view_cart": "Warenkorb ansehen",
       "empty": "Dein Warenkorb ist leer",
       "product_disclosure": "Produktoffenlegung",
       "product_disclosures": "Produktoffenlegungen",

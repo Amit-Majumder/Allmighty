@@ -281,6 +281,7 @@
       "remove_title": "{{ title }} 제거",
       "note": "주문 특별 지침",
       "checkout": "결제",
+      "view_cart": "카트 보기",
       "empty": "카트가 비어 있습니다",
       "product_disclosure": "제품 고지 사항",
       "product_disclosures": "제품 고지 사항",

@@ -291,6 +291,7 @@
       "remove_title": "Eliminar {{ title }}",
       "note": "Instruções especiais da encomenda",
       "checkout": "Finalizar a compra",
+      "view_cart": "Ver carrinho",
       "empty": "O seu carrinho está vazio",
       "product_disclosure": "Divulgação do produto",
       "product_disclosures": "Divulgações do produto",

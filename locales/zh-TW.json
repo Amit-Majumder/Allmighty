@@ -281,6 +281,7 @@
       "remove_title": "移除 {{ title }}",
       "note": "訂單特別指示",
       "checkout": "結帳",
+      "view_cart": "檢視購物車",
       "empty": "您的購物車是空的",
       "product_disclosure": "商品揭露資訊",
       "product_disclosures": "商品揭露資訊",

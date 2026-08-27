@@ -301,6 +301,7 @@
       "remove_title": "Odebrat: {{ title }}",
       "note": "Zvláštní pokyny k objednávce",
       "checkout": "Pokladna",
+      "view_cart": "Zobrazit košík",
       "empty": "Košík je prázdný",
       "product_disclosure": "Povinná informace o produktu",
       "product_disclosures": "Povinné informace o produktu",

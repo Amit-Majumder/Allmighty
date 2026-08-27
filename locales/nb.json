@@ -281,6 +281,7 @@
       "remove_title": "Fjern {{ title }}",
       "note": "Spesielle instruksjoner for bestillingen",
       "checkout": "Kasse",
+      "view_cart": "Vis handlekurv",
       "empty": "Handlekurven din er tom",
       "product_disclosure": "Produktopplysning",
       "product_disclosures": "Produktopplysninger",

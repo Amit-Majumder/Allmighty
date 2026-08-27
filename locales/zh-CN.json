@@ -281,6 +281,7 @@
       "remove_title": "删除 {{ title }}",
       "note": "订单特殊说明",
       "checkout": "结账",
+      "view_cart": "查看购物车",
       "empty": "您的购物车为空",
       "product_disclosure": "产品披露信息",
       "product_disclosures": "产品披露信息",

@@ -281,6 +281,7 @@
       "remove_title": "{{ title }} verwijderen",
       "note": "Speciale instructies voor bestelling",
       "checkout": "Afrekenen",
+      "view_cart": "Winkelwagen bekijken",
       "empty": "Je winkelwagen is leeg",
       "product_disclosure": "Productvermelding",
       "product_disclosures": "Productvermeldingen",

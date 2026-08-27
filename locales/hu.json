@@ -281,6 +281,7 @@
       "remove_title": "{{ title }} eltávolítása",
       "note": "Megjegyzések a rendeléssel kapcsolatban",
       "checkout": "Megrendelés",
+      "view_cart": "Kosár megtekintése",
       "empty": "A kosarad üres",
       "product_disclosure": "Terméktájékoztató",
       "product_disclosures": "Terméktájékoztatók",

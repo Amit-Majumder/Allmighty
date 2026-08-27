@@ -281,6 +281,7 @@
       "remove_title": "Poista {{ title }}",
       "note": "Tilauksen erityisohjeet",
       "checkout": "Kassa",
+      "view_cart": "Katso ostoskori",
       "empty": "Ostoskorisi on tyhjä",
       "product_disclosure": "Tuoteilmoitus",
       "product_disclosures": "Tuoteilmoitukset",
