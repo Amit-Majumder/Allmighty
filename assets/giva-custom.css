@@ -243,10 +243,15 @@ p {
 
   .header__search .search-modal__form {
     max-width: none;
+    margin-right: 5rem;
   }
 
   .header__search .search-modal__close-button {
-    display: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    transform: translateY(-50%);
   }
 }
 
