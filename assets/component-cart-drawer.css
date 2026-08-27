@@ -317,6 +317,14 @@ cart-drawer-items {
   line-height: 1;
 }
 
+.cart-drawer .cart__ctas {
+  display: block;
+}
+
+.cart-drawer .cart__ctas > * + * {
+  margin-top: 1rem;
+}
+
 .cart-drawer .tax-note {
   margin: 1.2rem 0 2rem auto;
   text-align: left;
