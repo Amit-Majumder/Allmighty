@@ -1771,6 +1771,37 @@ slideshow-component .slideshow.banner.banner--small {
   }
 }
 
+.template-policy__wrapper {
+  padding-top: 2.1rem;
+  padding-bottom: 2.1rem;
+}
+
+@media screen and (min-width: 750px) {
+  .template-policy__wrapper {
+    padding-top: 2.8rem;
+    padding-bottom: 2.8rem;
+  }
+}
+
+main .shopify-policy__container {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+main .shopify-policy__title {
+  margin: 0 0 2rem;
+}
+
+main .shopify-policy__title h1 {
+  margin: 0;
+}
+
+main .shopify-policy__body ul,
+main .shopify-policy__body ol {
+  padding-inline-start: 1.5em;
+}
+
 @media screen and (max-width: 989px) {
   .giva-cat__grid {
     gap: 1.4rem;

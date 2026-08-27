@@ -98,6 +98,12 @@
           "on_secondary_button": "secondary_button_label",
           "secondary_button_border": "secondary_button_label"
         }
+      },
+      {
+        "type": "color_scheme",
+        "id": "policy_color_scheme",
+        "label": "Policy pages color scheme",
+        "default": "scheme-4"
       }
     ]
   },
