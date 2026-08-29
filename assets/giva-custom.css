@@ -1889,3 +1889,9 @@ main .shopify-policy__body ol {
 .thumbnail-slider--no-slide .thumbnail-list {
   justify-content: center;
 }
+
+@media screen and (max-width: 749px) {
+  .product--thumbnail_slider .product__media-list .product__media-item {
+    width: 100%;
+  }
+}
