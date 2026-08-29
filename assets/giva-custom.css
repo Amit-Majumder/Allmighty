@@ -1891,7 +1891,13 @@ main .shopify-policy__body ol {
 }
 
 @media screen and (max-width: 749px) {
+  .product--thumbnail_slider .product__media-list .product__media-item:first-of-type {
+    margin-left: 0;
+  }
+
   .product--thumbnail_slider .product__media-list .product__media-item {
     width: 100%;
+    box-sizing: border-box;
+    padding: 0 1.5rem;
   }
 }
