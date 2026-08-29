@@ -1878,3 +1878,10 @@ main .shopify-policy__body ol {
     padding: 0 1.5rem;
   }
 }
+
+@media screen and (min-width: 990px) {
+  .product--stacked .product__media-item {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
