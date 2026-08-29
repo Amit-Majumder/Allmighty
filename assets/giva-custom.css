@@ -1885,3 +1885,7 @@ main .shopify-policy__body ol {
     margin-right: auto;
   }
 }
+
+.thumbnail-slider--no-slide .thumbnail-list {
+  justify-content: center;
+}
