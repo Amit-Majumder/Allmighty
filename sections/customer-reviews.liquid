@@ -43,6 +43,33 @@
   </div>
 </div>
 
+<script>
+(function () {
+  var host = document.getElementById('judgeme_product_reviews');
+  if (!host) return;
+  var Q = [/^questions?\s*(?:&|and|,)?\s*answers?$/i, /^ask a question$/i, /^be the first to ask/i, /^customer questions$/i, /^q\s*&\s*a$/i];
+  function rm(el) { if (el && el.parentNode) el.parentNode.removeChild(el); }
+  function hit(txt) {
+    var t = txt.trim().replace(/\s+/g, ' ');
+    if (!t || t.length > 60) return false;
+    return Q.some(function (r) { return r.test(t); });
+  }
+  function clean() {
+    host.querySelectorAll('[class*="question-item"], [class*="qna"], .jdgm-tabs [role="tab"]').forEach(function (el) {
+      if (el.matches('.jdgm-tabs [role="tab"]')) { if (hit(el.textContent)) rm(el); return; }
+      rm(el);
+    });
+    host.querySelectorAll('h1,h2,h3,h4,button,[role="heading"]').forEach(function (el) {
+      if (hit(el.textContent)) rm(el);
+    });
+  }
+  clean();
+  var mo = new MutationObserver(clean);
+  mo.observe(host, { childList: true, subtree: true });
+  setTimeout(function () { mo.disconnect(); }, 30000);
+})();
+</script>
+
 {% schema %}
 {
   "name": "Customer reviews",
