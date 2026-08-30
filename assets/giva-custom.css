@@ -1912,3 +1912,8 @@ main .shopify-policy__body ol {
     max-width: calc(50% - var(--grid-mobile-horizontal-spacing) / 2);
   }
 }
+
+
+#judgeme_product_reviews .jdgm-empty-state {
+  display: none;
+}
