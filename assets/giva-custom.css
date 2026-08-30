@@ -1934,3 +1934,22 @@ main .shopify-policy__body ol {
 #judgeme_product_reviews .jm-custom-answer-list__content {
   display: none;
 }
+
+/* Equalize review-card heights per row: convert Judge.me's masonry layout
+   (absolute-positioned columns) into a CSS grid so every card in a row is
+   as tall as the tallest card in that row (default grid stretch). */
+#judgeme_product_reviews .jdgm-masonry-grid__container {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)) !important;
+  gap: 24px !important;
+  height: auto !important;
+}
+#judgeme_product_reviews .jdgm-masonry-grid__masonry-item {
+  position: static !important;
+  transform: none !important;
+  width: auto !important;
+  min-width: 0 !important;
+}
+#judgeme_product_reviews .jdgm-masonry-grid__masonry-item-inner {
+  height: 100% !important;
+}
