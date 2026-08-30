@@ -1901,3 +1901,10 @@ main .shopify-policy__body ol {
     padding: 0 1.5rem;
   }
 }
+
+@media screen and (max-width: 749px) {
+  #product-grid .grid__item:only-child {
+    flex: initial;
+    max-width: calc(50% - var(--grid-mobile-horizontal-spacing) / 2);
+  }
+}
