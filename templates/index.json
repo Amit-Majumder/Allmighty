@@ -147,7 +147,7 @@
         "cat-5": {
           "type": "category",
           "settings": {
-            "image": "shopify://shop_images/Premium_24KT_Gold_Plated_AD_Twin_Crystal_Bracelet-1.1.png",
+            "image": "shopify://shop_images/Premium_24KT_Gold_Plated_AD_Twin_Crystal_Bracelet-1.1_de9f78ef-b616-4922-affe-4b9f3d366d29.png",
             "title": "AD Bracelet",
             "link": "shopify://collections/ad-bracelet"
           }
@@ -155,7 +155,7 @@
         "category_aM4aQG": {
           "type": "category",
           "settings": {
-            "image": "shopify://shop_images/Premium24KTGoldPlatedADFloralBangles-1.1.png",
+            "image": "shopify://shop_images/Premium_24KT_Gold_Plated_AD_Sphere_Bangles-1.1.png",
             "title": "Bangles",
             "link": "shopify://collections/bangles"
           }
@@ -163,7 +163,7 @@
         "cat-3": {
           "type": "category",
           "settings": {
-            "image": "shopify://shop_images/Premium_24KT_Gold_Plated_Pearl_Halo_Pendant_Set-1.1.png",
+            "image": "shopify://shop_images/Premium_24KT_Gold_Plated_Pearl_Halo_Pendant_Set-1.1_8e24c983-7a08-4af5-beac-6f55c534a8ae.png",
             "title": "Pearl Set",
             "link": "shopify://collections/pearl-sets"
           }
@@ -187,7 +187,7 @@
         "category_ziVymc": {
           "type": "category",
           "settings": {
-            "image": "shopify://shop_images/Premium_24KT_Gold_Plated_AD_Leaf_Pendant_Set-1.1.png",
+            "image": "shopify://shop_images/Premium_24KT_Gold_Plated_AD_Leaf_Pendant_Set-1.1_451f4529-f9da-4840-a8c6-253dd611b504.png",
             "title": "Pendant Necklace Set",
             "link": "shopify://collections/chains"
           }
@@ -195,7 +195,7 @@
         "category_jPiJVE": {
           "type": "category",
           "settings": {
-            "image": "shopify://shop_images/Premium24KTGoldPlatedFloralSwirlMangalsutra-1.1.png",
+            "image": "shopify://shop_images/Premium_24KT_Gold_Plated_Classic_Solitaire_Mangalsutra-1.1.png",
             "title": "Mangalsutra",
             "link": "shopify://collections/mangalsutra"
           }
@@ -221,14 +221,14 @@
         "padding_bottom": 48
       }
     },
-    "featured_collection_4tqBaK": {
+    "featured_collection": {
       "type": "featured-collection",
-      "name": "New Arrivals",
+      "name": "Bestsellers",
       "settings": {
-        "collection": "new-arrival",
+        "collection": "bestseller",
         "products_to_show": 25,
-        "eyebrow": "Fresh",
-        "title": "New Arrivals",
+        "eyebrow": "Trending",
+        "title": "Bestsellers",
         "heading_size": "h2",
         "description": "",
         "show_description": false,
@@ -293,14 +293,14 @@
         "padding_bottom": 48
       }
     },
-    "featured_collection": {
+    "featured_collection_4tqBaK": {
       "type": "featured-collection",
-      "name": "Bestsellers",
+      "name": "New Arrivals",
       "settings": {
-        "collection": "bestseller",
+        "collection": "new-arrival",
         "products_to_show": 25,
-        "eyebrow": "Trending",
-        "title": "Bestsellers",
+        "eyebrow": "Fresh",
+        "title": "New Arrivals",
         "heading_size": "h2",
         "description": "",
         "show_description": false,
@@ -413,9 +413,9 @@
     "slideshow",
     "promise_bar",
     "category_grid",
-    "featured_collection_4tqBaK",
-    "split_banner",
     "featured_collection",
+    "split_banner",
+    "featured_collection_4tqBaK",
     "giva_split_banner_b3a7bK",
     "rich_text"
   ]
