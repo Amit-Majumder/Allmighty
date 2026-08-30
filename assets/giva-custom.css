@@ -1917,3 +1917,13 @@ main .shopify-policy__body ol {
 #judgeme_product_reviews .jdgm-empty-state {
   display: none;
 }
+
+
+/* hide Judge.me widget tab strip (removes Questions & Answers; replicates paid toggle) */
+#judgeme_product_reviews .jdgm-tabs {
+  display: none;
+}
+
+#judgeme_product_reviews .jdgm-question-item {
+  display: none;
+}
