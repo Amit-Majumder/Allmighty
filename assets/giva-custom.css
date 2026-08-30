@@ -1952,4 +1952,18 @@ main .shopify-policy__body ol {
 }
 #judgeme_product_reviews .jdgm-masonry-grid__masonry-item-inner {
   height: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+/* stretch the review card itself to fill its grid cell so every card
+   in a row has the box height of the tallest card in that row */
+#judgeme_product_reviews .jdgm-masonry-grid__masonry-item .jdgm-review-card {
+  height: 100% !important;
+  width: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+#judgeme_product_reviews .jdgm-masonry-grid__masonry-item .jdgm-review-card__content {
+  flex: 1 1 0% !important;
+  min-height: 0 !important;
 }
