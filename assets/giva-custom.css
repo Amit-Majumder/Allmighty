@@ -1900,6 +1900,10 @@ main .shopify-policy__body ol {
     box-sizing: border-box;
     padding: 0 1.5rem;
   }
+
+  .product--thumbnail_slider .product__media-list.slider {
+    scroll-padding-left: 0;
+  }
 }
 
 @media screen and (max-width: 749px) {
