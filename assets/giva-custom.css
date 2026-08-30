@@ -1927,3 +1927,10 @@ main .shopify-policy__body ol {
 #judgeme_product_reviews .jdgm-question-item {
   display: none;
 }
+
+/* hide per-review Q&A answer blocks rendered by the revamp widget
+   (questions like "How would you rate the comfort of the fabric?") */
+#judgeme_product_reviews .jm-custom-answer-list,
+#judgeme_product_reviews .jm-custom-answer-list__content {
+  display: none;
+}

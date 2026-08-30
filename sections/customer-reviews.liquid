@@ -55,7 +55,7 @@
     return Q.some(function (r) { return r.test(t); });
   }
   function clean() {
-    host.querySelectorAll('[class*="question-item"], [class*="qna"], .jdgm-tabs [role="tab"]').forEach(function (el) {
+    host.querySelectorAll('[class*="question-item"], [class*="qna"], [class*="custom-answer-list"], .jdgm-tabs [role="tab"]').forEach(function (el) {
       if (el.matches('.jdgm-tabs [role="tab"]')) { if (hit(el.textContent)) rm(el); return; }
       rm(el);
     });
