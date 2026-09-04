@@ -1,0 +1,59 @@
+{
+  "sections": {
+    "about": {
+      "type": "page-about-us",
+      "blocks": {
+        "hero": {
+          "type": "hero",
+          "settings": {
+            "heading": "Our Story",
+            "subheading": "Handcrafted fine jewellery since 2019"
+          }
+        },
+        "story": {
+          "type": "brand_story",
+          "settings": {
+            "heading": "The Heart Behind Allmighty"
+          }
+        },
+        "iwt1": {
+          "type": "image_with_text",
+          "settings": {
+            "layout": "image_first"
+          }
+        },
+        "iwt2": {
+          "type": "image_with_text",
+          "settings": {
+            "layout": "text_first"
+          }
+        },
+        "values": {
+          "type": "values",
+          "settings": {
+            "heading": "What We Stand For"
+          }
+        },
+        "founder": {
+          "type": "founder"
+        }
+      },
+      "block_order": [
+        "hero",
+        "story",
+        "iwt1",
+        "iwt2",
+        "values",
+        "founder"
+      ],
+      "settings": {
+        "color_scheme": "scheme-1",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    }
+  },
+  "order": [
+    "about"
+  ]
+}

@@ -1,0 +1,556 @@
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+
+  /* ── Hero ── */
+  .au-hero {
+    position: relative;
+    min-height: 55vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+  }
+  .au-hero__bg {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+  }
+  .au-hero__bg::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(2, 56, 38, 0.72);
+    z-index: 1;
+  }
+  .au-hero__content {
+    position: relative;
+    z-index: 2;
+    padding: clamp(3rem, 8vw, 7rem) clamp(1.5rem, 5vw, 4rem);
+  }
+  .au-hero__title {
+    font-family: "Germania One", serif;
+    font-size: clamp(2.2rem, 6vw, 4.5rem);
+    color: #F5F0EB;
+    margin: 0;
+    letter-spacing: 0.04em;
+    line-height: 1.15;
+  }
+  .au-hero__rule {
+    width: 60px;
+    height: 2px;
+    background: #D4AF37;
+    margin: 1.2rem auto;
+    border: none;
+  }
+  .au-hero__subtitle {
+    font-family: "Germania One", serif;
+    font-size: clamp(0.85rem, 1.6vw, 1.1rem);
+    color: rgba(245, 240, 235, 0.82);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  /* ── Brand Story ── */
+  .au-story {
+    max-width: 740px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .au-story__title {
+    font-family: "Germania One", serif;
+    font-size: clamp(1.6rem, 3.2vw, 2.6rem);
+    margin: 0 0 1rem;
+    letter-spacing: 0.03em;
+    line-height: 1.2;
+  }
+  .au-story__rule {
+    width: 48px;
+    height: 2px;
+    background: #D4AF37;
+    margin: 0 auto 2rem;
+    border: none;
+  }
+  .au-story__body {
+    font-size: clamp(0.95rem, 1.2vw, 1.1rem);
+    line-height: 1.75;
+    color: var(--color-foreground, #333);
+    max-width: 640px;
+    margin: 0 auto;
+  }
+  .au-story__body p { margin: 0 0 1.2em; }
+  .au-story__body p:last-child { margin-bottom: 0; }
+
+  /* ── Image with text ── */
+  .au-iwt { display: flex; flex-wrap: wrap; align-items: center; gap: clamp(2rem, 5vw, 4rem); }
+  .au-iwt--reverse { flex-direction: row-reverse; }
+  .au-iwt__media {
+    flex: 1 1 42%;
+    min-width: 280px;
+    overflow: hidden;
+  }
+  .au-iwt__media img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  .au-iwt__media--placeholder {
+    aspect-ratio: 4 / 5;
+    background: #e5e5e5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #999;
+    font-size: 0.9rem;
+  }
+  .au-iwt__text {
+    flex: 1 1 40%;
+    min-width: 260px;
+  }
+  .au-iwt__heading {
+    font-family: "Germania One", serif;
+    font-size: clamp(1.4rem, 2.6vw, 2.2rem);
+    margin: 0 0 0.8rem;
+    letter-spacing: 0.03em;
+    line-height: 1.25;
+  }
+  .au-iwt__body {
+    font-size: clamp(0.92rem, 1.1vw, 1.05rem);
+    line-height: 1.72;
+    color: var(--color-foreground, #333);
+  }
+  .au-iwt__body p { margin: 0 0 1em; }
+  .au-iwt__body p:last-child { margin-bottom: 0; }
+
+  /* ── Values ── */
+  .au-values {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    text-align: center;
+  }
+  .au-values__title {
+    font-family: "Germania One", serif;
+    font-size: clamp(1.6rem, 3.2vw, 2.6rem);
+    margin: 0 0 2.5rem;
+    text-align: center;
+    letter-spacing: 0.03em;
+    line-height: 1.2;
+  }
+  .au-values__rule {
+    width: 48px;
+    height: 2px;
+    background: #D4AF37;
+    margin: 0 auto 2rem;
+    border: none;
+  }
+  .au-value__number {
+    font-family: "Germania One", serif;
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    color: #D4AF37;
+    margin: 0 0 0.3rem;
+    line-height: 1;
+  }
+  .au-value__name {
+    font-family: "Germania One", serif;
+    font-size: clamp(1rem, 1.4vw, 1.2rem);
+    margin: 0 0 0.5rem;
+    letter-spacing: 0.04em;
+  }
+  .au-value__desc {
+    font-size: clamp(0.85rem, 1vw, 0.95rem);
+    line-height: 1.65;
+    color: inherit;
+    opacity: 0.85;
+  }
+
+  /* ── Founder ── */
+  .au-founder {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: clamp(2rem, 5vw, 4rem);
+  }
+  .au-founder__media {
+    flex: 1 1 36%;
+    min-width: 240px;
+    overflow: hidden;
+  }
+  .au-founder__media img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  .au-founder__media--placeholder {
+    aspect-ratio: 3 / 4;
+    background: #e5e5e5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #999;
+  }
+  .au-founder__text {
+    flex: 1 1 50%;
+    min-width: 260px;
+  }
+  .au-founder__overline {
+    font-size: 0.75rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    opacity: 0.6;
+    margin: 0 0 0.6rem;
+  }
+  .au-founder__name {
+    font-family: "Germania One", serif;
+    font-size: clamp(1.5rem, 2.8vw, 2.4rem);
+    margin: 0 0 0.5rem;
+    letter-spacing: 0.03em;
+    line-height: 1.2;
+  }
+  .au-founder__role {
+    font-size: 0.9rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #D4AF37;
+    margin: 0 0 1.2rem;
+  }
+  .au-founder__bio {
+    font-size: clamp(0.92rem, 1.1vw, 1.05rem);
+    line-height: 1.72;
+    color: var(--color-foreground, #333);
+  }
+  .au-founder__bio p { margin: 0 0 1em; }
+  .au-founder__bio p:last-child { margin-bottom: 0; }
+
+  /* ── Gold rule utility ── */
+  .au-gold-rule {
+    width: 48px;
+    height: 2px;
+    background: #D4AF37;
+    border: none;
+  }
+{%- endstyle -%}
+
+{%- for block in section.blocks -%}
+  {%- case block.type -%}
+
+    {%- when 'hero' -%}
+      <div class="au-hero color-{{ section.settings.color_scheme }}" {{ block.shopify_attributes }}>
+        {%- if block.settings.image != blank -%}
+          <div class="au-hero__bg" style="background-image: url({{ block.settings.image | image_url: width: 1800 }});"></div>
+        {%- endif -%}
+        <div class="au-hero__content{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
+          {%- if block.settings.heading != blank -%}
+            <h1 class="au-hero__title">{{ block.settings.heading }}</h1>
+            <hr class="au-hero__rule">
+          {%- endif -%}
+          {%- if block.settings.subheading != blank -%}
+            <p class="au-hero__subtitle">{{ block.settings.subheading }}</p>
+          {%- endif -%}
+        </div>
+      </div>
+
+    {%- when 'brand_story' -%}
+      <div class="au-story section-{{ section.id }}-padding{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}" {{ block.shopify_attributes }}>
+        {%- if block.settings.heading != blank -%}
+          <h2 class="au-story__title" style="color: var(--color-foreground, #333);">{{ block.settings.heading }}</h2>
+          <hr class="au-story__rule">
+        {%- endif -%}
+        {%- if block.settings.body != blank -%}
+          <div class="au-story__body">{{ block.settings.body }}</div>
+        {%- endif -%}
+      </div>
+
+    {%- when 'image_with_text' -%}
+      <div class="au-iwt section-{{ section.id }}-padding{% if block.settings.layout == 'text_first' %} au-iwt--reverse{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}" {{ block.shopify_attributes }}>
+        <div class="au-iwt__media">
+          {%- if block.settings.image != blank -%}
+            {{ block.settings.image | image_url: width: 1200 | image_tag: widths: '500, 800, 1200' }}
+          {%- else -%}
+            <div class="au-iwt__media--placeholder">Image</div>
+          {%- endif -%}
+        </div>
+        <div class="au-iwt__text" style="color: var(--color-foreground, #333);">
+          {%- if block.settings.heading != blank -%}
+            <h2 class="au-iwt__heading">{{ block.settings.heading }}</h2>
+          {%- endif -%}
+          {%- if block.settings.body != blank -%}
+            <div class="au-iwt__body">{{ block.settings.body }}</div>
+          {%- endif -%}
+        </div>
+      </div>
+
+    {%- when 'values' -%}
+      <div class="section-{{ section.id }}-padding color-{{ section.settings.color_scheme }}"{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %} {{ block.shopify_attributes }}>
+        {%- if block.settings.heading != blank -%}
+          <h2 class="au-values__title" style="color: #F5F0EB;">{{ block.settings.heading }}</h2>
+          <hr class="au-values__rule">
+        {%- endif -%}
+        <div class="au-values">
+          {%- for i in (1..4) -%}
+            {%- assign title_key = 'value_' | append: i | append: '_title' -%}
+            {%- assign desc_key  = 'value_' | append: i | append: '_desc' -%}
+            {%- if block.settings[title_key] != blank -%}
+              <div class="au-value">
+                <p class="au-value__number" style="color: #D4AF37;">0{{ i }}</p>
+                <p class="au-value__name" style="color: #F5F0EB;">{{ block.settings[title_key] }}</p>
+                {%- if block.settings[desc_key] != blank -%}
+                  <p class="au-value__desc" style="color: rgba(245,240,235,0.8);">{{ block.settings[desc_key] }}</p>
+                {%- endif -%}
+              </div>
+            {%- endif -%}
+          {%- endfor -%}
+        </div>
+      </div>
+
+    {%- when 'founder' -%}
+      <div class="au-founder section-{{ section.id }}-padding{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}" {{ block.shopify_attributes }}>
+        <div class="au-founder__media">
+          {%- if block.settings.image != blank -%}
+            {{ block.settings.image | image_url: width: 900 | image_tag: widths: '400, 600, 900' }}
+          {%- else -%}
+            <div class="au-founder__media--placeholder">Photo</div>
+          {%- endif -%}
+        </div>
+        <div class="au-founder__text" style="color: var(--color-foreground, #333);">
+          {%- if block.settings.overline != blank -%}
+            <p class="au-founder__overline">{{ block.settings.overline }}</p>
+          {%- endif -%}
+          {%- if block.settings.name != blank -%}
+            <h2 class="au-founder__name">{{ block.settings.name }}</h2>
+          {%- endif -%}
+          {%- if block.settings.role != blank -%}
+            <p class="au-founder__role">{{ block.settings.role }}</p>
+          {%- endif -%}
+          {%- if block.settings.bio != blank -%}
+            <div class="au-founder__bio">{{ block.settings.bio }}</div>
+          {%- endif -%}
+        </div>
+      </div>
+
+  {%- endcase -%}
+{%- endfor -%}
+
+{% schema %}
+{
+  "name": "About Us page",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Section colors",
+      "default": "scheme-1"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding top",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding bottom",
+      "default": 60
+    }
+  ],
+  "blocks": [
+    {
+      "type": "hero",
+      "name": "Hero banner",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Background image"
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading",
+          "default": "Our Story"
+        },
+        {
+          "type": "text",
+          "id": "subheading",
+          "label": "Subheading",
+          "default": "Handcrafted fine jewellery since 2019"
+        }
+      ]
+    },
+    {
+      "type": "brand_story",
+      "name": "Brand story",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading"
+        },
+        {
+          "type": "richtext",
+          "id": "body",
+          "label": "Body"
+        }
+      ]
+    },
+    {
+      "type": "image_with_text",
+      "name": "Image with text",
+      "limit": 3,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading"
+        },
+        {
+          "type": "richtext",
+          "id": "body",
+          "label": "Body"
+        },
+        {
+          "type": "select",
+          "id": "layout",
+          "label": "Image position",
+          "options": [
+            { "value": "image_first", "label": "Left" },
+            { "value": "text_first", "label": "Right" }
+          ],
+          "default": "image_first"
+        }
+      ]
+    },
+    {
+      "type": "values",
+      "name": "Values strip",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading",
+          "default": "What We Stand For"
+        },
+        {
+          "type": "text",
+          "id": "value_1_title",
+          "label": "Value 1 — title"
+        },
+        {
+          "type": "text",
+          "id": "value_1_desc",
+          "label": "Value 1 — description"
+        },
+        {
+          "type": "text",
+          "id": "value_2_title",
+          "label": "Value 2 — title"
+        },
+        {
+          "type": "text",
+          "id": "value_2_desc",
+          "label": "Value 2 — description"
+        },
+        {
+          "type": "text",
+          "id": "value_3_title",
+          "label": "Value 3 — title"
+        },
+        {
+          "type": "text",
+          "id": "value_3_desc",
+          "label": "Value 3 — description"
+        },
+        {
+          "type": "text",
+          "id": "value_4_title",
+          "label": "Value 4 — title"
+        },
+        {
+          "type": "text",
+          "id": "value_4_desc",
+          "label": "Value 4 — description"
+        }
+      ]
+    },
+    {
+      "type": "founder",
+      "name": "Founder / team",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Photo"
+        },
+        {
+          "type": "text",
+          "id": "overline",
+          "label": "Overline",
+          "default": "Meet the founder"
+        },
+        {
+          "type": "text",
+          "id": "name",
+          "label": "Name"
+        },
+        {
+          "type": "text",
+          "id": "role",
+          "label": "Role / title"
+        },
+        {
+          "type": "richtext",
+          "id": "bio",
+          "label": "Bio"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "About Us page",
+      "blocks": [
+        { "type": "hero", "settings": { "heading": "Our Story", "subheading": "Handcrafted fine jewellery since 2019" } },
+        { "type": "brand_story", "settings": { "heading": "The Heart Behind Allmighty" } },
+        { "type": "image_with_text", "settings": { "layout": "image_first" } },
+        { "type": "image_with_text", "settings": { "layout": "text_first" } },
+        { "type": "values", "settings": { "heading": "What We Stand For" } },
+        { "type": "founder" }
+      ]
+    }
+  ]
+}
+{% endschema %}
