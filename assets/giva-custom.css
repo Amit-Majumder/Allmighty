@@ -1967,20 +1967,3 @@ main .shopify-policy__body ol {
   flex: 1 1 0% !important;
   min-height: 0 !important;
 }
-
-/* Product Add to Cart button: dark green #023826 */
-.product-form__submit.button--primary {
-  background-color: #023826 !important;
-  color: #F5F0EB !important;
-}
-.product-form__submit.button--primary::after {
-  box-shadow: 0 0 0 calc(var(--buttons-border-width, 1px) + var(--border-offset, 0))
-      rgba(2, 56, 38, var(--border-opacity, 0.8)),
-    0 0 0 var(--buttons-border-width, 1px) rgba(2, 56, 38, var(--alpha-button-background, 1)) !important;
-}
-.product-form__submit.button--primary:not([disabled]):hover::after {
-  --border-offset: 1.3px;
-  box-shadow: 0 0 0 calc(var(--buttons-border-width, 1px) + 1.3px)
-      rgba(2, 56, 38, var(--border-opacity, 0.8)),
-    0 0 0 calc(var(--buttons-border-width, 1px) + 1px) rgba(2, 56, 38, var(--alpha-button-background, 1)) !important;
-}
