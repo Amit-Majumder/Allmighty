@@ -22,30 +22,48 @@
         "story": {
           "type": "brand_story",
           "settings": {
-            "heading": "The Heart Behind Allmighty"
+            "heading": "The Heart Behind Allmighty",
+            "body": ""
           }
         },
         "iwt1": {
           "type": "image_with_text",
           "settings": {
+            "heading": "",
+            "body": "",
             "layout": "image_first"
           }
         },
         "iwt2": {
           "type": "image_with_text",
           "settings": {
+            "heading": "",
+            "body": "",
             "layout": "text_first"
           }
         },
         "values": {
           "type": "values",
           "settings": {
-            "heading": "What We Stand For"
+            "heading": "What We Stand For",
+            "value_1_title": "",
+            "value_1_desc": "",
+            "value_2_title": "",
+            "value_2_desc": "",
+            "value_3_title": "",
+            "value_3_desc": "",
+            "value_4_title": "",
+            "value_4_desc": ""
           }
         },
         "founder": {
           "type": "founder",
-          "settings": {}
+          "settings": {
+            "overline": "Meet the founder",
+            "name": "",
+            "role": "",
+            "bio": ""
+          }
         }
       },
       "block_order": [
