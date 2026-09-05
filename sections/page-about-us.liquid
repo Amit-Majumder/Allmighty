@@ -108,22 +108,18 @@
     flex-direction: row-reverse;
   }
   .au-iwt__media {
-    flex: 1 1 100%;
+    flex: 1 1 50%;
     min-width: 0;
     overflow: hidden;
-    position: relative;
-    min-height: 320px;
   }
   .au-iwt__media img {
-    position: absolute;
-    inset: 0;
+    display: block;
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: cover;
   }
   .au-iwt__media--placeholder {
-    position: absolute;
-    inset: 0;
+    aspect-ratio: 4 / 5;
     background: #e5e5e5;
     display: flex;
     align-items: center;
@@ -156,10 +152,6 @@
   .au-iwt__body p:last-child { margin-bottom: 0; }
 
   @media screen and (min-width: 750px) {
-    .au-iwt__media {
-      flex: 1 1 50%;
-      min-height: 0;
-    }
     .au-iwt__text {
       padding-left: clamp(1.5rem, 3vw, 3rem);
       padding-right: 5rem;
