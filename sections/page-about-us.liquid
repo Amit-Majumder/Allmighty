@@ -10,59 +10,6 @@
     }
   }
 
-  /* ── Hero ── */
-  .au-hero {
-    position: relative;
-    min-height: 55vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    overflow: hidden;
-  }
-  .au-hero__bg {
-    position: absolute;
-    inset: 0;
-    background-size: cover;
-    background-position: center;
-    z-index: 0;
-  }
-  .au-hero__bg::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(2, 56, 38, 0.72);
-    z-index: 1;
-  }
-  .au-hero__content {
-    position: relative;
-    z-index: 2;
-    padding: clamp(3rem, 8vw, 7rem) clamp(1.5rem, 5vw, 4rem);
-  }
-  .au-hero__title {
-    font-family: "Germania One", serif;
-    font-size: clamp(2.2rem, 6vw, 4.5rem);
-    color: #F5F0EB;
-    margin: 0;
-    letter-spacing: 0.04em;
-    line-height: 1.15;
-  }
-  .au-hero__rule {
-    width: 60px;
-    height: 2px;
-    background: #D4AF37;
-    margin: 1.2rem auto;
-    border: none;
-  }
-  .au-hero__subtitle {
-    font-family: "Germania One", serif;
-    font-size: clamp(0.85rem, 1.6vw, 1.1rem);
-    color: rgba(245, 240, 235, 0.82);
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    margin: 0;
-  }
-
   /* ── Content wrapper (page width + scheme) ── */
   .au-block {
     width: 100%;
@@ -273,23 +220,23 @@
   }
 {%- endstyle -%}
 
+{{ 'component-collection-hero.css' | asset_url | stylesheet_tag }}
+
 {%- for block in section.blocks -%}
   {%- case block.type -%}
 
     {%- when 'hero' -%}
-      <div class="au-block au-hero-wrap color-{{ section.settings.color_scheme }} gradient" {{ block.shopify_attributes }}>
-        <div class="au-hero">
-          {%- if block.settings.image != blank -%}
-            <div class="au-hero__bg" style="background-image: url({{ block.settings.image | image_url: width: 1800 }});"></div>
-          {%- endif -%}
-          <div class="au-hero__content{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
-            {%- if block.settings.heading != blank -%}
-              <h1 class="au-hero__title">{{ block.settings.heading }}</h1>
-              <hr class="au-hero__rule">
-            {%- endif -%}
-            {%- if block.settings.subheading != blank -%}
-              <p class="au-hero__subtitle">{{ block.settings.subheading }}</p>
-            {%- endif -%}
+      <div class="au-block color-{{ section.settings.color_scheme }} gradient" {{ block.shopify_attributes }}>
+        <div class="collection-hero">
+          <div class="collection-hero__inner page-width{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
+            <div class="collection-hero__text-wrapper">
+              {%- if block.settings.heading != blank -%}
+                <h1 class="collection-hero__title">{{ block.settings.heading }}</h1>
+              {%- endif -%}
+              {%- if block.settings.body != blank -%}
+                <div class="collection-hero__description rte">{{ block.settings.body }}</div>
+              {%- endif -%}
+            </div>
           </div>
         </div>
       </div>
@@ -423,21 +370,15 @@
       "limit": 1,
       "settings": [
         {
-          "type": "image_picker",
-          "id": "image",
-          "label": "Background image"
-        },
-        {
           "type": "text",
           "id": "heading",
           "label": "Heading",
           "default": "Our Story"
         },
         {
-          "type": "text",
-          "id": "subheading",
-          "label": "Subheading",
-          "default": "Handcrafted fine jewellery since 2019"
+          "type": "richtext",
+          "id": "body",
+          "label": "Body text"
         }
       ]
     },
@@ -581,7 +522,7 @@
     {
       "name": "About Us page",
       "blocks": [
-        { "type": "hero", "settings": { "heading": "Our Story", "subheading": "Handcrafted fine jewellery since 2019" } },
+        { "type": "hero", "settings": { "heading": "Our Story", "body": "<p>Handcrafted fine jewellery since 2019</p>" } },
         { "type": "brand_story", "settings": { "heading": "The Heart Behind Allmighty" } },
         { "type": "image_with_text", "settings": { "layout": "image_first" } },
         { "type": "image_with_text", "settings": { "layout": "text_first" } },

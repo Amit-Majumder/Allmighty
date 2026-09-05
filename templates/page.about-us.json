@@ -16,7 +16,7 @@
           "type": "hero",
           "settings": {
             "heading": "Our Story",
-            "subheading": "Handcrafted fine jewellery since 2019"
+            "body": "<p>Handcrafted fine jewellery since 2019</p>"
           }
         },
         "story": {
