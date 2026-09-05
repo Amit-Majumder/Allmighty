@@ -89,7 +89,7 @@
     border: none;
   }
   .au-story__body {
-    font-size: clamp(0.95rem, 1.2vw, 1.1rem);
+    font-size: 1.5rem;
     line-height: 1.75;
     color: rgb(var(--color-foreground));
     max-width: 640px;
@@ -141,14 +141,14 @@
     padding-right: 1.5rem;
   }
   .au-iwt__heading {
-    font-family: "Germania One", serif;
-    font-size: clamp(1.2rem, 2.2vw, 1.8rem);
-    margin: 0 0 0.6rem;
-    letter-spacing: 0.03em;
+    font-family: var(--font-heading-family);
+    font-size: calc(var(--font-heading-scale) * 2rem);
     line-height: 1.25;
+    margin: 0 0 1.2rem;
+    letter-spacing: 0.02em;
   }
   .au-iwt__body {
-    font-size: clamp(0.88rem, 1.05vw, 1rem);
+    font-size: 1.5rem;
     line-height: 1.65;
     color: rgb(var(--color-foreground));
   }
@@ -201,12 +201,13 @@
   }
   .au-value__name {
     font-family: "Germania One", serif;
-    font-size: clamp(1rem, 1.4vw, 1.2rem);
-    margin: 0 0 0.5rem;
-    letter-spacing: 0.04em;
+    font-size: 2rem;
+    margin: 0 0 0.8rem;
+    letter-spacing: 0.03em;
+    line-height: 1.2;
   }
   .au-value__desc {
-    font-size: clamp(0.85rem, 1vw, 0.95rem);
+    font-size: 1.5rem;
     line-height: 1.65;
     color: rgb(var(--color-foreground));
     opacity: 0.85;
@@ -264,7 +265,7 @@
     margin: 0 0 1.2rem;
   }
   .au-founder__bio {
-    font-size: clamp(0.92rem, 1.1vw, 1.05rem);
+    font-size: 1.5rem;
     line-height: 1.72;
     color: rgb(var(--color-foreground));
   }
