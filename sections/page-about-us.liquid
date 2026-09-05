@@ -67,13 +67,6 @@
   .au-block {
     width: 100%;
   }
-  .au-iwt,
-  .au-values,
-  .au-founder {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-  }
 
   /* ── Brand Story ── */
   .au-story {
@@ -105,22 +98,32 @@
   .au-story__body p { margin: 0 0 1.2em; }
   .au-story__body p:last-child { margin-bottom: 0; }
 
-  /* ── Image with text ── */
-  .au-iwt { display: flex; flex-wrap: wrap; align-items: center; gap: clamp(1.5rem, 4vw, 3rem); }
-  .au-iwt--reverse { flex-direction: row-reverse; }
+  /* ── Image with text (edge-to-edge) ── */
+  .au-iwt {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+  }
+  .au-iwt--reverse {
+    flex-direction: row-reverse;
+  }
   .au-iwt__media {
-    flex: 1 1 38%;
-    min-width: 260px;
+    flex: 1 1 100%;
+    min-width: 0;
     overflow: hidden;
+    position: relative;
+    min-height: 320px;
   }
   .au-iwt__media img {
-    display: block;
+    position: absolute;
+    inset: 0;
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: cover;
   }
   .au-iwt__media--placeholder {
-    aspect-ratio: 4 / 5;
+    position: absolute;
+    inset: 0;
     background: #e5e5e5;
     display: flex;
     align-items: center;
@@ -129,8 +132,13 @@
     font-size: 0.9rem;
   }
   .au-iwt__text {
-    flex: 1 1 38%;
-    min-width: 240px;
+    flex: 1 1 50%;
+    min-width: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
   .au-iwt__heading {
     font-family: "Germania One", serif;
@@ -146,6 +154,21 @@
   }
   .au-iwt__body p { margin: 0 0 1em; }
   .au-iwt__body p:last-child { margin-bottom: 0; }
+
+  @media screen and (min-width: 750px) {
+    .au-iwt__media {
+      flex: 1 1 50%;
+      min-height: 0;
+    }
+    .au-iwt__text {
+      padding-left: clamp(1.5rem, 3vw, 3rem);
+      padding-right: 5rem;
+    }
+    .au-iwt--reverse .au-iwt__text {
+      padding-left: 5rem;
+      padding-right: clamp(1.5rem, 3vw, 3rem);
+    }
+  }
 
   /* ── Values ── */
   .au-values {
@@ -293,15 +316,15 @@
 
     {%- when 'image_with_text' -%}
       <div class="au-block color-{{ section.settings.color_scheme }} gradient" {{ block.shopify_attributes }}>
-        <div class="page-width section-{{ section.id }}-padding au-iwt{% if block.settings.layout == 'text_first' %} au-iwt--reverse{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+        <div class="au-iwt{% if block.settings.layout == 'text_first' %} au-iwt--reverse{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
           <div class="au-iwt__media">
             {%- if block.settings.image != blank -%}
-              {{ block.settings.image | image_url: width: 1000 | image_tag: widths: '400, 600, 1000' }}
+              {{ block.settings.image | image_url: width: 1200 | image_tag: widths: '400, 600, 1200' }}
             {%- else -%}
               <div class="au-iwt__media--placeholder">Image</div>
             {%- endif -%}
           </div>
-          <div class="au-iwt__text">
+          <div class="au-iwt__text section-{{ section.id }}-padding">
             {%- if block.settings.heading != blank -%}
               <h2 class="au-iwt__heading">{{ block.settings.heading }}</h2>
             {%- endif -%}
