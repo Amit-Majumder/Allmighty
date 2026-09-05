@@ -29,40 +29,19 @@
         "iwt1": {
           "type": "image_with_text",
           "settings": {
-            "heading": "",
-            "body": "",
+            "image": "shopify://shop_images/Philosophy.png",
+            "heading": "OUR PHILOSOPHY",
+            "body": "<p>We believe beautiful jewellery shouldn't be reserved only for special occasions.</p><p>Our collections are chosen to balance elegance, versatility and wearability — from delicate everyday pieces to statement designs for moments worth celebrating.</p><p>Every piece is selected with one thought in mind: <strong>would we be proud to make this a part of your jewellery collection?</strong></p>",
             "layout": "image_first"
           }
         },
         "iwt2": {
           "type": "image_with_text",
           "settings": {
-            "heading": "",
-            "body": "",
+            "image": "shopify://shop_images/Promise.png",
+            "heading": "OUR PROMISE",
+            "body": "<p>What you see should be what you look forward to receiving.</p><p>From the jewellery we select to the way it is presented and delivered, we want every ALLMIGHTY experience to feel considered, transparent and dependable.</p><p>We focus on beautiful finishes, carefully chosen designs and a shopping experience built around confidence — because earning your trust matters just as much as earning your order.</p>",
             "layout": "text_first"
-          }
-        },
-        "values": {
-          "type": "values",
-          "settings": {
-            "heading": "What We Stand For",
-            "value_1_title": "",
-            "value_1_desc": "",
-            "value_2_title": "",
-            "value_2_desc": "",
-            "value_3_title": "",
-            "value_3_desc": "",
-            "value_4_title": "",
-            "value_4_desc": ""
-          }
-        },
-        "founder": {
-          "type": "founder",
-          "settings": {
-            "overline": "Meet the founder",
-            "name": "",
-            "role": "",
-            "bio": ""
           }
         }
       },
@@ -70,9 +49,7 @@
         "hero",
         "story",
         "iwt1",
-        "iwt2",
-        "values",
-        "founder"
+        "iwt2"
       ],
       "settings": {
         "color_scheme": "scheme-1",
