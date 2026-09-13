@@ -208,6 +208,13 @@
         },
         "sold_out_badge_color_scheme": {
           "label": "Schema colori per badge esaurito"
+        },
+        "tag_badge_color_scheme": {
+          "label": "Schema colori badge etichetta"
+        },
+        "badge_tags": {
+          "label": "Mostra badge per le etichette dei prodotti",
+          "info": "Elenco separato da virgole delle etichette prodotto visualizzate come badge sulle schede. I prodotti devono essere etichettati nell'admin."
         }
       }
     },

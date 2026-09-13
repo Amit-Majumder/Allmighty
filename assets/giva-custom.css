@@ -412,6 +412,17 @@ p {
   display: none;
 }
 
+.card__badge:has(.product-tag-badge) {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.4rem;
+}
+
+.card__badge .badge:not(.product-tag-badge) {
+  display: none;
+}
+
 .card__badge .badge {
   padding: 0.7rem 1.4rem;
   font-size: 1.1rem;

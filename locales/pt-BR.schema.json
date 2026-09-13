@@ -208,6 +208,13 @@
         },
         "sold_out_badge_color_scheme": {
           "label": "Esquema de cores do selo de esgotado"
+        },
+        "tag_badge_color_scheme": {
+          "label": "Esquema de cores do selo de etiqueta"
+        },
+        "badge_tags": {
+          "label": "Mostrar selos para tags de produtos",
+          "info": "Lista separada por vírgulas de tags de produtos exibidas como selos nos cartões de produto. Os produtos devem ser marcados no admin."
         }
       }
     },

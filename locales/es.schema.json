@@ -208,6 +208,13 @@
         },
         "sold_out_badge_color_scheme": {
           "label": "Esquema de color de emblema de agotado"
+        },
+        "tag_badge_color_scheme": {
+          "label": "Esquema de color de la insignia de etiqueta"
+        },
+        "badge_tags": {
+          "label": "Mostrar insignias para etiquetas de producto",
+          "info": "Lista separada por comas de etiquetas de producto que se muestran como insignias en las tarjetas. Los productos deben estar etiquetados en el administrador."
         }
       }
     },

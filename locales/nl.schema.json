@@ -208,6 +208,13 @@
         },
         "sold_out_badge_color_scheme": {
           "label": "Kleurschema uitverkocht-badge"
+        },
+        "tag_badge_color_scheme": {
+          "label": "Kleurschema tagbadge"
+        },
+        "badge_tags": {
+          "label": "Badges voor producttags weergeven",
+          "info": "Door komma's gescheiden lijst met producttags die als badges op productkaarten worden weergegeven. Producten moeten in de admin worden getagd."
         }
       }
     },

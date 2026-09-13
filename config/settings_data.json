@@ -107,6 +107,8 @@
     "badge_corner_radius": 4,
     "sale_badge_color_scheme": "scheme-1",
     "sold_out_badge_color_scheme": "scheme-1",
+    "tag_badge_color_scheme": "scheme-2",
+    "badge_tags": "Bestseller, New Arrival",
     "brand_headline": "",
     "brand_description": "<p></p>",
     "brand_image": "shopify://shop_images/Brand_Logo.png",

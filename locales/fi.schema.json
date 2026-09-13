@@ -222,6 +222,13 @@
         },
         "sold_out_badge_color_scheme": {
           "label": "Loppuunmyyty-tunnuksen värimalli"
+        },
+        "tag_badge_color_scheme": {
+          "label": "Tunnisteen merkinnän värimalli"
+        },
+        "badge_tags": {
+          "label": "Näytä merkinnät tuotteen tunnisteille",
+          "info": "Pilkulla erotettu luettelo tuotteen tunnisteista, jotka näytetään merkkeinä tuotekorteissa. Tuotteet pitää merkitä ylläpidossa."
         }
       }
     },

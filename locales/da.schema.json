@@ -208,6 +208,13 @@
         },
         "sold_out_badge_color_scheme": {
           "label": "Farveskema for udsolgt-badges"
+        },
+        "tag_badge_color_scheme": {
+          "label": "Farveskema for tag-mærkning"
+        },
+        "badge_tags": {
+          "label": "Vis mærker for produkt-tags",
+          "info": "Kommasepareret liste over produkt-tags, der vises som mærker på produktkort. Produkterne skal være tagget i admin."
         }
       }
     },

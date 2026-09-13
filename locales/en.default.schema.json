@@ -108,6 +108,13 @@
         },
         "sold_out_badge_color_scheme": {
           "label": "Sold out badge color scheme"
+        },
+        "tag_badge_color_scheme": {
+          "label": "Tag badge color scheme"
+        },
+        "badge_tags": {
+          "label": "Show badges for product tags",
+          "info": "Comma-separated list of product tags that display as badges on product cards. Products must be tagged in the admin to show the badge."
         }
       }
     },

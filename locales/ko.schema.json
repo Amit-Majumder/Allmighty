@@ -208,6 +208,13 @@
         },
         "sold_out_badge_color_scheme": {
           "label": "품절 배지 색상 체계"
+        },
+        "tag_badge_color_scheme": {
+          "label": "태그 배지 색 구성표"
+        },
+        "badge_tags": {
+          "label": "제품 태그 배지 표시",
+          "info": "상품 카드에 배지로 표시할 상품 태그의 쉼표로 구분된 목록입니다. 관리자에서 상품에 태그를 지정해야 합니다."
         }
       }
     },

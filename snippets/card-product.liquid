@@ -16,6 +16,7 @@
   - horizontal_class: {Boolean} Add a card--horizontal class if set to true. Default: false (optional)
   - horizontal_quick_add: {Boolean} Changes the quick add button styles when set to true. Default: false (optional)
   - placeholder_image: {String} The placeholder image to use when no product exists. Default: 'product-apparel-2' (optional)
+  - badge_tags: {Array} Product tags that should render as badges on the card (optional)
 
   Usage:
   {% render 'card-product', show_vendor: section.settings.show_vendor %}
@@ -39,6 +40,19 @@
     if ratio == 0 or ratio == null
       assign ratio = 1
     endif
+    unless badge_tags
+      assign badge_tags = settings.badge_tags | split: ','
+    endunless
+    assign product_tags_lower = card_product.tags | join: ',' | downcase
+    assign card_badges = ''
+    for badge_tag in badge_tags
+      assign badge_tag = badge_tag | strip
+      assign badge_tag_lower = badge_tag | downcase
+      if badge_tag != '' and product_tags_lower contains badge_tag_lower
+        assign escaped_tag = badge_tag | escape
+        assign card_badges = card_badges | append: '<span class="product-tag-badge badge badge--bottom-left color-' | append: settings.tag_badge_color_scheme | append: '">' | append: escaped_tag | append: '</span>'
+      endif
+    endfor
   -%}
 
   <product-component view-event-payload="{{ card_product | standard_event_data: 'view', context: product_view_context | escape }}">
@@ -127,6 +141,7 @@
               </h3>
             </div>
             <div class="card__badge {{ settings.badge_position }}">
+              {{- card_badges -}}
               {%- if card_product.available == false -%}
                 <span
                   id="NoMediaStandardBadge-{{ section_id }}-{{ card_product.id }}"
@@ -557,6 +572,7 @@
             {% endif %}
           {% endif %}
           <div class="card__badge {{ settings.badge_position }}">
+            {{- card_badges -}}
             {%- if card_product.available == false -%}
               <span
                 id="Badge-{{ section_id }}-{{ card_product.id }}"

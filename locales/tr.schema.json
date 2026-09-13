@@ -208,6 +208,13 @@
         },
         "sold_out_badge_color_scheme": {
           "label": "Tükendi rozeti renk şeması"
+        },
+        "tag_badge_color_scheme": {
+          "label": "Etiket rozeti renk şeması"
+        },
+        "badge_tags": {
+          "label": "Ürün etiketleri için rozetleri göster",
+          "info": "Ürün kartlarında rozet olarak görünen ürün etiketlerinin virgülle ayrılmış listesi. Ürünlerin yöneticide etiketlenmesi gerekir."
         }
       }
     },

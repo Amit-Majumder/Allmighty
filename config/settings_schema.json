@@ -1269,6 +1269,18 @@
         "id": "sold_out_badge_color_scheme",
         "label": "t:settings_schema.badges.settings.sold_out_badge_color_scheme.label",
         "default": "scheme-3"
+      },
+      {
+        "type": "color_scheme",
+        "id": "tag_badge_color_scheme",
+        "label": "t:settings_schema.badges.settings.tag_badge_color_scheme.label",
+        "default": "scheme-5"
+      },
+      {
+        "type": "text",
+        "id": "badge_tags",
+        "label": "t:settings_schema.badges.settings.badge_tags.label",
+        "info": "t:settings_schema.badges.settings.badge_tags.info"
       }
     ]
   },

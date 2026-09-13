@@ -208,6 +208,13 @@
         },
         "sold_out_badge_color_scheme": {
           "label": "售罄徽章配色方案"
+        },
+        "tag_badge_color_scheme": {
+          "label": "标签徽章颜色方案"
+        },
+        "badge_tags": {
+          "label": "显示产品标签徽章",
+          "info": "以逗号分隔的产品标签列表，将显示为产品卡片上的徽章。产品必须在后台标记标签。"
         }
       }
     },

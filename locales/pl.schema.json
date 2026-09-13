@@ -208,6 +208,13 @@
         },
         "sold_out_badge_color_scheme": {
           "label": "Kolorystyka znaczków Wyprzedane"
+        },
+        "tag_badge_color_scheme": {
+          "label": "Schemat kolorów odznaki tagu"
+        },
+        "badge_tags": {
+          "label": "Pokaż odznaki dla tagów produktu",
+          "info": "Oddzielona przecinkami lista tagów produktów wyświetlanych jako odznaki na kartach produktów. Produkty muszą mieć tagi nadane w panelu administracyjnym."
         }
       }
     },

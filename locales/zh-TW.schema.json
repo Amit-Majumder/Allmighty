@@ -222,6 +222,13 @@
         },
         "sold_out_badge_color_scheme": {
           "label": "售罄徽章顏色佈景主題"
+        },
+        "tag_badge_color_scheme": {
+          "label": "標籤徽章顏色配置"
+        },
+        "badge_tags": {
+          "label": "顯示產品標籤徽章",
+          "info": "以逗號分隔的產品標籤清單，將顯示為產品卡片上的徽章。產品必須在後台標記標籤。"
         }
       }
     },

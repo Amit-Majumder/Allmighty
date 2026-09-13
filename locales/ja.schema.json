@@ -222,6 +222,13 @@
         },
         "sold_out_badge_color_scheme": {
           "label": "完売バッジの配色"
+        },
+        "tag_badge_color_scheme": {
+          "label": "タグバッジの配色"
+        },
+        "badge_tags": {
+          "label": "商品タグのバッジを表示",
+          "info": "商品カードにバッジとして表示する商品タグのカンマ区切りリスト。商品を管理画面でタグ付けする必要があります。"
         }
       }
     },
