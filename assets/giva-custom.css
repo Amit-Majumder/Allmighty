@@ -298,6 +298,20 @@ p {
   box-shadow: none;
 }
 
+/* Notify Me (back-in-stock) button — match the Buy Now button */
+.product-form__buttons {
+  --giva-notify-button-color: var(--color-button);
+  --giva-notify-button-text: var(--color-button-text);
+  --giva-notify-button-alpha: var(--alpha-button-background);
+}
+
+.product-form__buttons .restock-alerts-notify-button {
+  --color-button: var(--giva-notify-button-color);
+  --color-button-text: var(--giva-notify-button-text);
+  --alpha-button-background: var(--giva-notify-button-alpha);
+  border-color: transparent;
+}
+
 .button--full-width {
   padding: 1.2rem 2rem;
 }
