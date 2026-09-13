@@ -433,7 +433,7 @@ p {
 }
 
 .product-tag-badge--bestseller {
-  --color-badge-background: 2, 56, 38;
+  --color-badge-background: 110, 42, 35;
   --color-badge-foreground: 255, 253, 247;
   --color-badge-border: 255, 253, 247;
 }
