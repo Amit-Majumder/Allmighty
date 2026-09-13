@@ -107,12 +107,12 @@
 
         {%- if section.settings.collection.products.size > 0 -%}
           {% assign lazy_load = false %}
-          {%- liquid
-            assign featured_available = section.settings.collection.products | where: 'available'
-            assign featured_sold_out = section.settings.collection.products | where: 'available', false
-            assign featured_ordered = featured_available | concat: featured_sold_out
-          -%}
-          {% paginate featured_ordered by section.settings.products_to_show %}
+          {% paginate section.settings.collection.products by section.settings.products_to_show %}
+            {%- liquid
+              assign featured_available = section.settings.collection.products | where: 'available'
+              assign featured_sold_out = section.settings.collection.products | where: 'available', false
+              assign featured_ordered = featured_available | concat: featured_sold_out
+            -%}
             {%- for product in featured_ordered limit: section.settings.products_to_show -%}
               {% if lazy_load == false and forloop.index > max_columns_to_show %}
                 {% assign lazy_load = true %}
