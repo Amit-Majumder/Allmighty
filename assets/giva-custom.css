@@ -1244,6 +1244,11 @@ slideshow-component .slideshow.banner.banner--small {
   color: rgb(var(--color-foreground));
 }
 
+/* Premium jewellery brand content width — 1440px (theme slider only offers 100px steps) */
+:root {
+  --page-width: 144rem;
+}
+
 /* Content sections are constrained to the theme max-width; only the image-led
    editorial sections (hero slideshow + split banners) stay full-bleed. */
 .giva-split .page-width {
