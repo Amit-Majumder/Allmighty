@@ -139,7 +139,7 @@
         "cat-2": {
           "type": "category",
           "settings": {
-            "image": "shopify://shop_images/Premium24KTGoldPlatedJhumkaChandbaliEarrings-1.1.png",
+            "image": "shopify://shop_images/Premium_24KT_Gold_Plated_Jhumka_Chandbali_Earrings-1.1.png",
             "title": "Earrings",
             "link": "shopify://collections/earrings"
           }
@@ -163,7 +163,7 @@
         "cat-3": {
           "type": "category",
           "settings": {
-            "image": "shopify://shop_images/Premium_24KT_Gold_Plated_Pearl_Halo_Pendant_Set-1.1_8e24c983-7a08-4af5-beac-6f55c534a8ae.png",
+            "image": "shopify://shop_images/Premium_24KT_Gold_Plated_Pearl_Halo_Pendant_Set-1.1.png",
             "title": "Pearl Set",
             "link": "shopify://collections/pearl-sets"
           }
@@ -171,7 +171,7 @@
         "category_WeccRg": {
           "type": "category",
           "settings": {
-            "image": "shopify://shop_images/Premium24KTGoldPlatedRubyLayeredLahariChain-1.1.png",
+            "image": "shopify://shop_images/Premium_24KT_Gold_Plated_Ruby_Layered_Lahari_Chain-1.1.png",
             "title": "Chain",
             "link": "shopify://collections/chain"
           }
@@ -179,7 +179,7 @@
         "cat-4": {
           "type": "category",
           "settings": {
-            "image": "shopify://shop_images/Premium24KTGoldPlatedADLeafClusterPendantChain-1.1.png",
+            "image": "shopify://shop_images/Premium_24KT_Gold_Plated_AD_Leaf_Cluster_Pendant_Chain-1.1.png",
             "title": "Pendant Chain",
             "link": "shopify://collections/pendant-chain"
           }
@@ -239,7 +239,7 @@
         "show_view_all": true,
         "view_all_style": "outline",
         "color_scheme": "scheme-4",
-        "image_ratio": "square",
+        "image_ratio": "portrait",
         "image_shape": "default",
         "show_secondary_image": true,
         "show_vendor": false,
@@ -311,7 +311,7 @@
         "show_view_all": true,
         "view_all_style": "outline",
         "color_scheme": "scheme-4",
-        "image_ratio": "square",
+        "image_ratio": "portrait",
         "image_shape": "default",
         "show_secondary_image": true,
         "show_vendor": false,
