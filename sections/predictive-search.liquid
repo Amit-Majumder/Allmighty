@@ -129,7 +129,12 @@
               role="group"
               aria-labelledby="predictive-search-products"
             >
-              {%- for product in predictive_search.resources.products -%}
+              {%- liquid
+                assign predictive_available = predictive_search.resources.products | where: 'available'
+                assign predictive_sold_out = predictive_search.resources.products | where: 'available', false
+                assign predictive_ordered = predictive_available | concat: predictive_sold_out
+              -%}
+              {%- for product in predictive_ordered -%}
                 <li
                   id="predictive-search-option-product-{{ forloop.index }}"
                   class="predictive-search__list-item"

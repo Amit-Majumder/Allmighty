@@ -259,7 +259,11 @@
                 role="list"
               >
                 {%- assign skip_card_product_styles = false -%}
-                {%- for item in search.results -%}
+                {%- liquid
+                  assign search_sold_out = search.results | where: 'available', false
+                  assign search_ordered = search.results | reject: 'available', false | concat: search_sold_out
+                -%}
+                {%- for item in search_ordered -%}
                   {% assign lazy_load = false %}
                   {%- if forloop.index > 2 -%}
                     {%- assign lazy_load = true -%}

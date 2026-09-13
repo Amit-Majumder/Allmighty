@@ -570,6 +570,11 @@
                             </summary>
                           {%- endif -%}
                           <slideshow-component class="slider-mobile-gutter">
+                            {%- liquid
+                              assign recommendation_available = recommendations.products | where: 'available'
+                              assign recommendation_sold_out = recommendations.products | where: 'available', false
+                              assign recommendations_ordered = recommendation_available | concat: recommendation_sold_out
+                            -%}
                             {%- assign number_of_slides = recommendations.products_count
                               | plus: 0.0
                               | divided_by: block.settings.products_per_page
@@ -596,7 +601,7 @@
                                   {% endif %}
                                 >
                                   <ul class="list-unstyled" role="list">
-                                    {%- for product in recommendations.products
+                                    {%- for product in recommendations_ordered
                                       limit: block.settings.products_per_page
                                       offset: continue
                                     -%}
