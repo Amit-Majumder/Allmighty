@@ -1249,11 +1249,8 @@ slideshow-component .slideshow.banner.banner--small {
   --page-width: 144rem;
 }
 
-/* Content sections are constrained to the theme max-width; only the image-led
-   editorial sections (hero slideshow + split banners) stay full-bleed. */
-.giva-split .page-width {
-  max-width: none;
-}
+/* Content sections are constrained to the theme max-width; the hero slideshow
+   stays full-bleed. */
 
 .giva-slideshow__picture {
   display: block;
