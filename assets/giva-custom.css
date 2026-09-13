@@ -1244,8 +1244,10 @@ slideshow-component .slideshow.banner.banner--small {
   color: rgb(var(--color-foreground));
 }
 
-.page-width {
-  max-width: 100%;
+/* Content sections are constrained to the theme max-width; only the image-led
+   editorial sections (hero slideshow + split banners) stay full-bleed. */
+.giva-split .page-width {
+  max-width: none;
 }
 
 .giva-slideshow__picture {
@@ -1452,7 +1454,7 @@ slideshow-component .slideshow.banner.banner--small {
 }
 
 .giva-collection-scroller.slider-component-desktop:not(.page-width-desktop) {
-  max-width: 100%;
+  max-width: var(--page-width);
   margin-left: auto;
   margin-right: auto;
   padding: 0 1.5rem;
@@ -1791,21 +1793,9 @@ slideshow-component .slideshow.banner.banner--small {
 }
 
 .page-width--narrow {
-  max-width: none;
-}
-
-@media screen and (min-width: 750px) {
-  .page-width--narrow {
-    padding-left: 5rem;
-    padding-right: 5rem;
-  }
-}
-
-@media screen and (min-width: 990px) {
-  .page-width--narrow {
-    padding-left: 5rem;
-    padding-right: 5rem;
-  }
+  max-width: 72.6rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .template-policy__wrapper {
@@ -1821,9 +1811,15 @@ slideshow-component .slideshow.banner.banner--small {
 }
 
 main .shopify-policy__container {
-  max-width: 100%;
-  margin: 0;
-  padding: 0;
+  max-width: var(--page-width);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+@media screen and (min-width: 750px) {
+  main .shopify-policy__container {
+    padding: 0 5rem;
+  }
 }
 
 main .shopify-policy__title {
