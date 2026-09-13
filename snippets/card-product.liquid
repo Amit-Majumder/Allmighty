@@ -50,7 +50,8 @@
       assign badge_tag_lower = badge_tag_clean | downcase
       if badge_tag_clean != '' and product_tags_lower contains badge_tag_lower
         assign escaped_tag = badge_tag_clean | escape
-        assign card_badges = card_badges | append: '<span class="product-tag-badge badge badge--bottom-left color-' | append: settings.tag_badge_color_scheme | append: '">' | append: escaped_tag | append: '</span>'
+        assign badge_tag_handle = badge_tag_clean | downcase | handle
+        assign card_badges = card_badges | append: '<span class="product-tag-badge badge badge--bottom-left color-' | append: settings.tag_badge_color_scheme | append: ' product-tag-badge--' | append: badge_tag_handle | append: '">' | append: escaped_tag | append: '</span>'
       endif
     endfor
   -%}
