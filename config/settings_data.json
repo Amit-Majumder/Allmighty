@@ -107,7 +107,7 @@
     "badge_corner_radius": 4,
     "sale_badge_color_scheme": "scheme-1",
     "sold_out_badge_color_scheme": "scheme-1",
-    "tag_badge_color_scheme": "scheme-2",
+    "tag_badge_color_scheme": "scheme-4",
     "badge_tags": "Bestseller, New Arrival",
     "brand_headline": "",
     "brand_description": "<p></p>",
@@ -163,22 +163,22 @@
         "settings": {
           "background": "#023826",
           "background_gradient": "",
-          "text": "#FFFDF7",
-          "button": "#FFFDF7",
+          "text": "#fffdf7",
+          "button": "#fffdf7",
           "button_label": "#023826",
-          "secondary_button_label": "#FFFDF7",
+          "secondary_button_label": "#fffdf7",
           "shadow": "#023826"
         }
       },
       "scheme-4": {
         "settings": {
-          "background": "#FFFDF7",
+          "background": "#fffdf7",
           "background_gradient": "",
-          "text": "#1A1A1A",
+          "text": "#1a1a1a",
           "button": "#023826",
-          "button_label": "#FFFDF7",
-          "secondary_button_label": "#1A1A1A",
-          "shadow": "#1A1A1A"
+          "button_label": "#fffdf7",
+          "secondary_button_label": "#1a1a1a",
+          "shadow": "#1a1a1a"
         }
       }
     }
