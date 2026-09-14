@@ -275,23 +275,6 @@ p {
   padding: 1.1rem 3rem 1.1rem 4rem;
 }
 
-.menu-drawer__submenu--auto-expanded > .menu-drawer__inner-submenu > .menu-drawer__menu > li > details > summary .svg-wrapper:first-of-type {
-  display: none;
-}
-
-.menu-drawer__submenu--auto-expanded > .menu-drawer__inner-submenu > .menu-drawer__menu > li > details > summary .svg-wrapper:last-of-type {
-  display: block;
-  width: 1rem;
-}
-
-.menu-drawer__submenu--auto-expanded > .menu-drawer__inner-submenu > .menu-drawer__menu > li > details > summary .svg-wrapper:last-of-type .icon-caret {
-  display: block;
-}
-
-.menu-drawer__submenu--auto-expanded > .menu-drawer__inner-submenu > .menu-drawer__menu > li > details[open] > summary .svg-wrapper:last-of-type {
-  transform: translateY(-50%) rotate(180deg);
-}
-
 .header__icon {
   color: rgb(var(--color-foreground));
 }
