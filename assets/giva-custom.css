@@ -210,6 +210,50 @@ p {
   padding-bottom: 0.7rem;
 }
 
+/* Mobile drawer: inline accordion for auto-expanded submenus */
+.menu-drawer__submenu--auto-expanded > .menu-drawer__inner-submenu > .menu-drawer__menu > li > details[open] > .menu-drawer__submenu {
+  position: static;
+  transform: none;
+  visibility: visible;
+  width: auto;
+  bottom: auto;
+  left: auto;
+  background-color: transparent;
+  z-index: auto;
+  overflow-y: visible;
+  border: none;
+  box-shadow: none;
+}
+
+.menu-drawer__submenu--auto-expanded > .menu-drawer__inner-submenu > .menu-drawer__menu > li > details[open] > .menu-drawer__submenu > .menu-drawer__inner-submenu {
+  height: auto;
+  overflow-y: visible;
+}
+
+.menu-drawer__submenu--auto-expanded > .menu-drawer__inner-submenu > .menu-drawer__menu > li > details[open] > .menu-drawer__submenu .menu-drawer__close-button {
+  display: none;
+}
+
+.menu-drawer__submenu--auto-expanded > .menu-drawer__inner-submenu > .menu-drawer__menu > li > details[open] > .menu-drawer__submenu .menu-drawer__menu {
+  padding: 0;
+}
+
+.menu-drawer__submenu--auto-expanded > .menu-drawer__inner-submenu > .menu-drawer__menu > li > details[open] > .menu-drawer__submenu .menu-drawer__menu-item {
+  font-size: 1.4rem;
+  padding: 1.1rem 3rem;
+}
+
+.menu-drawer__submenu--auto-expanded > .menu-drawer__inner-submenu > .menu-drawer__menu > li > details[open] > summary {
+  font-size: 1.3rem;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.menu-drawer__submenu--auto-expanded > .menu-drawer__inner-submenu > .menu-drawer__menu > li > details[open] > summary .svg-wrapper {
+  display: none;
+}
+
 .header__icon {
   color: rgb(var(--color-foreground));
 }

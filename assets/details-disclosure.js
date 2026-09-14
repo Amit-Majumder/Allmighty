@@ -112,3 +112,60 @@ class HeaderMenu extends DetailsDisclosure {
 }
 
 customElements.define('header-menu', HeaderMenu);
+
+/* Mobile drawer: auto-expand nested submenus (accordion-style) when a parent opens */
+(function () {
+  function expandAllNested(detailsEl) {
+    const parentSubmenu = detailsEl.querySelector('.menu-drawer__submenu');
+    if (parentSubmenu) parentSubmenu.classList.add('menu-drawer__submenu--auto-expanded');
+
+    detailsEl.querySelectorAll('.menu-drawer__submenu details').forEach((nested) => {
+      if (!nested.hasAttribute('open')) nested.setAttribute('open', '');
+      nested.classList.add('menu-opening');
+      nested.querySelector('summary').setAttribute('aria-expanded', 'true');
+    });
+  }
+
+  function collapseAllNested(detailsEl) {
+    detailsEl.querySelectorAll('.menu-drawer__submenu details').forEach((nested) => {
+      nested.removeAttribute('open');
+      nested.classList.remove('menu-opening');
+      nested.querySelector('summary').setAttribute('aria-expanded', 'false');
+    });
+    const parentSubmenu = detailsEl.querySelector('.menu-drawer__submenu');
+    if (parentSubmenu) parentSubmenu.classList.remove('menu-drawer__submenu--auto-expanded');
+  }
+
+  function init() {
+    const drawer = document.getElementById('Details-menu-drawer-container');
+    if (!drawer) return;
+
+    const firstLevelItems = drawer.querySelectorAll('.menu-drawer__navigation > .menu-drawer__menu > li > details');
+    firstLevelItems.forEach((details) => {
+      details.addEventListener('toggle', () => {
+        if (details.hasAttribute('open')) {
+          expandAllNested(details);
+        } else {
+          collapseAllNested(details);
+        }
+      });
+    });
+
+    drawer.addEventListener(
+      'click',
+      (event) => {
+        const groupSummary = event.target.closest('.menu-drawer__submenu--auto-expanded details > summary');
+        if (!groupSummary) return;
+        event.preventDefault();
+        event.stopImmediatePropagation();
+      },
+      { capture: true }
+    );
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
