@@ -288,6 +288,7 @@
         "eyebrow": "Explore",
         "title": "Shop by Collection",
         "heading_size": "h2",
+        "image_ratio": "3/2",
         "color_scheme": "scheme-4",
         "padding_top": 48,
         "padding_bottom": 48
@@ -326,16 +327,28 @@
     "giva_split_banner_b3a7bK": {
       "type": "giva-split-banner",
       "blocks": {
-        "banner_giRedK": {
+        "banner_rWbYTq": {
           "type": "banner",
           "settings": {
-            "image": "shopify://shop_images/Under_799.png",
-            "overlay_opacity": 0,
+            "image": "shopify://shop_images/Under_499.png",
+            "overlay_opacity": 20,
             "eyebrow": "",
             "title": "",
             "text": "",
             "button_label": "",
             "link": "shopify://collections/under-799"
+          }
+        },
+        "banner_4RKafK": {
+          "type": "banner",
+          "settings": {
+            "image": "shopify://shop_images/Under_999.png",
+            "overlay_opacity": 20,
+            "eyebrow": "",
+            "title": "",
+            "text": "",
+            "button_label": "",
+            "link": "shopify://collections/under-999"
           }
         },
         "banner_8GW8V6": {
@@ -349,11 +362,25 @@
             "button_label": "",
             "link": "shopify://collections/under-1499"
           }
+        },
+        "banner_giRedK": {
+          "type": "banner",
+          "settings": {
+            "image": "shopify://shop_images/Under_1999.png",
+            "overlay_opacity": 0,
+            "eyebrow": "",
+            "title": "",
+            "text": "",
+            "button_label": "",
+            "link": "shopify://collections/under-1999"
+          }
         }
       },
       "block_order": [
-        "banner_giRedK",
-        "banner_8GW8V6"
+        "banner_rWbYTq",
+        "banner_4RKafK",
+        "banner_8GW8V6",
+        "banner_giRedK"
       ],
       "name": "Shop by Budget",
       "settings": {
