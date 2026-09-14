@@ -188,7 +188,7 @@ p {
 }
 
 .mega-menu__link--level-2 {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   letter-spacing: 0.24em;
   text-transform: uppercase;
   font-weight: 500;
@@ -202,10 +202,11 @@ p {
 }
 
 .mega-menu__link:not(.mega-menu__link--level-2) {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   letter-spacing: 0.02em;
   text-transform: none;
   font-weight: 400;
+  padding-left: 1.2rem;
   padding-top: 0.7rem;
   padding-bottom: 0.7rem;
 }
@@ -263,15 +264,16 @@ p {
 }
 
 .menu-drawer__submenu--auto-expanded > .menu-drawer__inner-submenu > .menu-drawer__menu > li > details[open] > .menu-drawer__submenu .menu-drawer__menu-item {
-  font-size: 1.4rem;
-  padding: 1.1rem 3rem;
+  font-size: 1.35rem;
+  padding: 0.9rem 3rem 0.9rem 4.5rem;
 }
 
 .menu-drawer__submenu--auto-expanded > .menu-drawer__inner-submenu > .menu-drawer__menu > li > details[open] > summary {
-  font-size: 1.3rem;
-  letter-spacing: 0.24em;
+  font-size: 1.55rem;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
   font-weight: 500;
+  padding: 1.1rem 3rem 1.1rem 3rem;
 }
 
 .menu-drawer__submenu--auto-expanded > .menu-drawer__inner-submenu > .menu-drawer__menu > li > details[open] > summary .svg-wrapper {
