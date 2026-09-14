@@ -176,6 +176,40 @@ p {
   box-shadow: none;
 }
 
+/* Mega menu (Shop by Category / Shop by Collection / Shop by Budget columns) */
+.mega-menu__list {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.8rem 6rem;
+}
+
+.mega-menu__content {
+  border-top: 1px solid rgba(62, 39, 57, 0.07);
+  box-shadow: 0 8px 24px rgba(62, 39, 57, 0.08);
+}
+
+.mega-menu__link--level-2 {
+  font-size: 1.3rem;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: rgb(var(--color-foreground));
+  padding-bottom: 1rem;
+}
+
+.mega-menu__link--level-2:hover {
+  text-decoration: none;
+  text-decoration-thickness: 0.2rem;
+}
+
+.mega-menu__link:not(.mega-menu__link--level-2) {
+  font-size: 1.4rem;
+  letter-spacing: 0.02em;
+  text-transform: none;
+  font-weight: 400;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+}
+
 .header__icon {
   color: rgb(var(--color-foreground));
 }
