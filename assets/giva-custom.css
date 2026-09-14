@@ -134,6 +134,48 @@ p {
   opacity: 0.6;
 }
 
+/* Header dropdown submenus (Shop by Category / Shop by Collection / Shop by Budget) */
+.header__submenu .list-menu__item,
+.header__submenu .header__menu-item {
+  font-size: 1.4rem;
+  letter-spacing: 0.02em;
+  text-transform: none;
+  font-weight: 400;
+}
+
+.header__submenu .header__menu-item:hover > span,
+.header__submenu .header__menu-item:focus > span {
+  opacity: 1;
+}
+
+.header__submenu.list-menu--disclosure {
+  width: max-content;
+  min-width: 20rem;
+  padding: 1rem 0;
+}
+
+.header__submenu details > summary.header__menu-item {
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: rgb(var(--color-foreground));
+}
+
+.header__submenu details > summary.header__menu-item:hover {
+  text-decoration: none;
+}
+
+.header__submenu details > summary.header__menu-item .icon-caret {
+  opacity: 0.6;
+}
+
+.header__submenu .header__submenu {
+  background: transparent;
+  padding: 0 0 0.4rem;
+  margin: 0 0 0.8rem;
+  border: none;
+  box-shadow: none;
+}
+
 .header__icon {
   color: rgb(var(--color-foreground));
 }

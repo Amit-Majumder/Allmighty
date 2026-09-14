@@ -36,6 +36,67 @@ class HeaderMenu extends DetailsDisclosure {
   constructor() {
     super();
     this.header = document.querySelector('.header-wrapper');
+    this.nestedDetails = [];
+
+    if (window.matchMedia('(hover: hover) and (min-width: 990px)').matches) {
+      this.enableHoverOpen();
+    }
+  }
+
+  enableHoverOpen() {
+    const closeTimer = 150;
+
+    let scheduleClose = null;
+
+    const open = () => {
+      if (scheduleClose) {
+        clearTimeout(scheduleClose);
+        scheduleClose = null;
+      }
+      this.mainDetailsToggle.setAttribute('open', '');
+    };
+
+    const close = () => {
+      scheduleClose = setTimeout(() => {
+        this.mainDetailsToggle.removeAttribute('open');
+        this.nestedDetails.forEach((details) => details.removeAttribute('open'));
+      }, closeTimer);
+    };
+
+    const suppressPointerToggle = (summary) => {
+      summary.addEventListener('click', (event) => {
+        if (event.detail > 0) event.preventDefault();
+      });
+    };
+
+    this.addEventListener('mouseenter', open);
+    this.addEventListener('mouseleave', close);
+
+    this.nestedDetails = Array.from(
+      this.querySelectorAll('.header__submenu details')
+    );
+
+    this.nestedDetails.forEach((details) => {
+      let nestedTimer = null;
+
+      details.addEventListener('mouseenter', () => {
+        if (nestedTimer) {
+          clearTimeout(nestedTimer);
+          nestedTimer = null;
+        }
+        details.setAttribute('open', '');
+      });
+
+      details.addEventListener('mouseleave', () => {
+        nestedTimer = setTimeout(() => {
+          details.removeAttribute('open');
+        }, closeTimer);
+      });
+
+      suppressPointerToggle(details.querySelector('summary'));
+    });
+
+    suppressPointerToggle(this.mainDetailsToggle.querySelector('summary'));
   }
 
   onToggle() {
