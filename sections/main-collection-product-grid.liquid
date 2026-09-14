@@ -46,7 +46,10 @@
       assign collection_sold_out = collection.products | where: 'available', false
       assign collection_ordered = collection_available | concat: collection_sold_out
     -%}
-    {%- paginate collection_ordered by section.settings.products_per_page -%}
+    {%- paginate collection.products by section.settings.products_per_page -%}
+      {%- liquid
+        assign page_offset = paginate.current_page | minus: 1 | times: section.settings.products_per_page
+      -%}
       {% comment %} Sort is the first tabbable element when filter type is vertical {% endcomment %}
       {%- if section.settings.enable_sorting and section.settings.filter_type == 'vertical' -%}
         <facet-filters-form class="facets facets-vertical-sort page-width small-hide">
@@ -162,7 +165,10 @@
                 "
               >
                 {% assign skip_card_product_styles = false %}
-                {%- for product in collection_ordered -%}
+                {%- for product in collection_ordered
+                  limit: section.settings.products_per_page
+                  offset: page_offset
+                -%}
                   {% assign lazy_load = false %}
                   {%- if forloop.index > 2 -%}
                     {%- assign lazy_load = true -%}
