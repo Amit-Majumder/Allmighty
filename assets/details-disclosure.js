@@ -118,12 +118,6 @@ customElements.define('header-menu', HeaderMenu);
   function expandAllNested(detailsEl) {
     const parentSubmenu = detailsEl.querySelector('.menu-drawer__submenu');
     if (parentSubmenu) parentSubmenu.classList.add('menu-drawer__submenu--auto-expanded');
-
-    detailsEl.querySelectorAll('.menu-drawer__submenu details').forEach((nested) => {
-      if (!nested.hasAttribute('open')) nested.setAttribute('open', '');
-      nested.classList.add('menu-opening');
-      nested.querySelector('summary').setAttribute('aria-expanded', 'true');
-    });
   }
 
   function collapseAllNested(detailsEl) {

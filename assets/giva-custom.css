@@ -267,7 +267,7 @@ p {
   padding: 0.9rem 3rem 0.9rem 5.5rem;
 }
 
-.menu-drawer__submenu--auto-expanded > .menu-drawer__inner-submenu > .menu-drawer__menu > li > details[open] > summary {
+.menu-drawer__submenu--auto-expanded > .menu-drawer__inner-submenu > .menu-drawer__menu > li > details > summary {
   font-size: 1.55rem;
   letter-spacing: 0.18em;
   text-transform: uppercase;
