@@ -211,6 +211,30 @@ p {
 }
 
 /* Mobile drawer: inline accordion for auto-expanded submenus */
+.js details[open] > .menu-drawer__submenu--auto-expanded {
+  position: static;
+  transform: none;
+  visibility: visible;
+  width: auto;
+  top: auto;
+  bottom: auto;
+  left: auto;
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  z-index: auto;
+  overflow-y: visible;
+}
+
+.js details[open] > .menu-drawer__submenu--auto-expanded > .menu-drawer__inner-submenu {
+  height: auto;
+  overflow-y: visible;
+}
+
+.js details[open] > .menu-drawer__submenu--auto-expanded > .menu-drawer__inner-submenu > .menu-drawer__close-button {
+  display: none;
+}
+
 .menu-drawer__submenu--auto-expanded > .menu-drawer__inner-submenu > .menu-drawer__menu > li > details[open] > .menu-drawer__submenu {
   position: static;
   transform: none;
