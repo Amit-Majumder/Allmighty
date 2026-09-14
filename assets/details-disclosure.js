@@ -170,9 +170,21 @@ customElements.define('header-menu', HeaderMenu);
         }
 
         const groupSummary = event.target.closest('.menu-drawer__submenu--auto-expanded details > summary');
-        if (!groupSummary) return;
-        event.preventDefault();
-        event.stopImmediatePropagation();
+        if (groupSummary) {
+          event.preventDefault();
+          event.stopImmediatePropagation();
+          const detailsEl = groupSummary.parentElement;
+          if (detailsEl.hasAttribute('open')) {
+            detailsEl.removeAttribute('open');
+            detailsEl.classList.remove('menu-opening');
+            groupSummary.setAttribute('aria-expanded', 'false');
+          } else {
+            detailsEl.setAttribute('open', '');
+            detailsEl.classList.add('menu-opening');
+            groupSummary.setAttribute('aria-expanded', 'true');
+          }
+          return;
+        }
       },
       { capture: true }
     );
