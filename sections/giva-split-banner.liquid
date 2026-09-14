@@ -1,5 +1,5 @@
 <div
-  class="giva-split color-{{ section.settings.color_scheme }} gradient"
+  class="giva-split giva-split--{{ section.settings.image_ratio | replace: '/', '-' }} color-{{ section.settings.color_scheme }} gradient"
   style="padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px; padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;"
 >
   <div class="page-width">
@@ -99,6 +99,27 @@
       ],
       "default": "h2",
       "label": "Heading size"
+    },
+    {
+      "type": "select",
+      "id": "image_ratio",
+      "options": [
+        {
+          "value": "3/2",
+          "label": "3/2 (Default)"
+        },
+        {
+          "value": "16/9",
+          "label": "16/9 (Short)"
+        },
+        {
+          "value": "2/1",
+          "label": "2/1 (Squarer)"
+        }
+      ],
+      "default": "3/2",
+      "label": "Card aspect ratio",
+      "info": "Only applies to this split banner section on the homepage."
     },
     {
       "type": "color_scheme",

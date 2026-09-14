@@ -1827,6 +1827,14 @@ slideshow-component .slideshow.banner.banner--small {
   background: var(--brand-tint);
 }
 
+.giva-split--16-9 .giva-split__card {
+  aspect-ratio: 16 / 9;
+}
+
+.giva-split--2-1 .giva-split__card {
+  aspect-ratio: 2 / 1;
+}
+
 .giva-split__image {
   position: absolute;
   inset: 0;
