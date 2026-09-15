@@ -413,7 +413,7 @@
           "type": "button",
           "settings": {
             "button_label": "Shop All Jewellery",
-            "button_link": "shopify://collections/all",
+            "button_link": "shopify://collections/all-products",
             "button_style_secondary": false,
             "button_label_2": "",
             "button_link_2": "",
