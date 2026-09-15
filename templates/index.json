@@ -128,7 +128,7 @@
       ],
       "name": "Promises",
       "settings": {
-        "color_scheme": "scheme-1",
+        "color_scheme": "scheme-4",
         "padding_top": 48,
         "padding_bottom": 48
       }
@@ -216,7 +216,7 @@
         "eyebrow": "Variety",
         "title": "Shop by Category",
         "heading_size": "h2",
-        "color_scheme": "scheme-4",
+        "color_scheme": "scheme-1",
         "padding_top": 48,
         "padding_bottom": 48
       }
@@ -238,7 +238,7 @@
         "full_width": false,
         "show_view_all": true,
         "view_all_style": "solid",
-        "color_scheme": "scheme-4",
+        "color_scheme": "scheme-1",
         "image_ratio": "portrait",
         "image_shape": "default",
         "show_secondary_image": true,
@@ -289,7 +289,7 @@
         "title": "Shop by Collection",
         "heading_size": "h2",
         "image_ratio": "3/2",
-        "color_scheme": "scheme-4",
+        "color_scheme": "scheme-1",
         "padding_top": 48,
         "padding_bottom": 48
       }
@@ -311,7 +311,7 @@
         "full_width": false,
         "show_view_all": true,
         "view_all_style": "solid",
-        "color_scheme": "scheme-4",
+        "color_scheme": "scheme-1",
         "image_ratio": "portrait",
         "image_shape": "default",
         "show_secondary_image": true,
@@ -388,7 +388,7 @@
         "title": "Shop by Budget",
         "heading_size": "h2",
         "image_ratio": "21/9",
-        "color_scheme": "scheme-4",
+        "color_scheme": "scheme-1",
         "padding_top": 48,
         "padding_bottom": 48
       }
@@ -430,10 +430,27 @@
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
-        "color_scheme": "scheme-4",
+        "color_scheme": "scheme-1",
         "full_width": true,
         "padding_top": 48,
         "padding_bottom": 48
+      }
+    },
+    "1789492278735ce86b": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_featured_carousel_HJDaB4": {
+          "type": "shopify://apps/judge-me-reviews/blocks/featured_carousel/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "maxwidth": 1080
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_featured_carousel_HJDaB4"
+      ],
+      "settings": {
+        "include_margins": true
       }
     }
   },
@@ -445,6 +462,7 @@
     "split_banner",
     "featured_collection_4tqBaK",
     "giva_split_banner_b3a7bK",
-    "rich_text"
+    "rich_text",
+    "1789492278735ce86b"
   ]
 }
