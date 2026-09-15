@@ -157,10 +157,12 @@
         "disabled": false,
         "settings": {}
       },
-      "5043070786800498925": {
-        "type": "shopify://apps/sw-back-in-stock/blocks/bis-switch/b190bced-3b7b-47da-a05f-6ea4821c3a77",
+      "13047258039897440615": {
+        "type": "shopify://apps/judge-me-reviews/blocks/cart_drawer_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
         "disabled": false,
-        "settings": {}
+        "settings": {
+          "widget_type": "review-widget"
+        }
       }
     },
     "color_schemes": {
