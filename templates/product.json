@@ -121,7 +121,8 @@
         "judge_me_reviews_review_widget_8AXMrp"
       ],
       "settings": {
-        "include_margins": true
+        "include_margins": true,
+        "color_scheme": "scheme-4"
       }
     }
   },
