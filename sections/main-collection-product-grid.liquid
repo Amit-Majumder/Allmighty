@@ -41,7 +41,23 @@
   data-collection-id="{{ collection.id }}"
 >
   <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.color_scheme }}">
+    {%- liquid
+      assign collection_available = false
+      assign collection_sold_out = false
+      if collection.products_count <= 50
+        assign collection_available = collection.products | where: 'available'
+        assign collection_sold_out = collection.products | where: 'available', false
+      endif
+    -%}
     {%- paginate collection.products by section.settings.products_per_page -%}
+      {%- liquid
+        assign page_offset = 0
+        assign loop_products = collection.products
+        if collection.products_count <= 50
+          assign loop_products = collection_available | concat: collection_sold_out
+          assign page_offset = paginate.current_page | minus: 1 | times: section.settings.products_per_page
+        endif
+      -%}
       {% comment %} Sort is the first tabbable element when filter type is vertical {% endcomment %}
       {%- if section.settings.enable_sorting and section.settings.filter_type == 'vertical' -%}
         <facet-filters-form class="facets facets-vertical-sort page-width small-hide">
@@ -128,7 +144,7 @@
             data-cascade
           {% endif %}
         >
-          {%- if collection.products.size == 0 -%}
+          {%- if loop_products.size == 0 -%}
             <div class="collection collection--empty page-width" id="product-grid" data-id="{{ section.id }}">
               <div class="loading-overlay gradient"></div>
               <div class="title-wrapper center">
@@ -157,7 +173,10 @@
                 "
               >
                 {% assign skip_card_product_styles = false %}
-                {%- for product in collection.products -%}
+                {%- for product in loop_products
+                  limit: section.settings.products_per_page
+                  offset: page_offset
+                -%}
                   {% assign lazy_load = false %}
                   {%- if forloop.index > 2 -%}
                     {%- assign lazy_load = true -%}
