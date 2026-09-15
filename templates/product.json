@@ -3,52 +3,15 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "title": {
-          "type": "title",
-          "settings": {}
-        },
-        "price": {
-          "type": "price",
-          "settings": {}
-        },
-        "variant_picker": {
-          "type": "variant_picker",
-          "settings": {
-            "picker_type": "button",
-            "swatch_shape": "circle"
-          }
-        },
-        "quantity_selector": {
-          "type": "quantity_selector",
-          "settings": {}
-        },
-        "buy_buttons": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": true,
-            "show_gift_card_recipient": true
-          }
-        },
-        "description": {
-          "type": "description",
-          "settings": {}
-        },
-        "share": {
-          "type": "share",
-          "settings": {
-            "share_label": "Share"
-          }
-        }
+        "title": { "type": "title", "settings": {} },
+        "price": { "type": "price", "settings": {} },
+        "variant_picker": { "type": "variant_picker", "settings": { "picker_type": "button", "swatch_shape": "circle" } },
+        "quantity_selector": { "type": "quantity_selector", "settings": {} },
+        "buy_buttons": { "type": "buy_buttons", "settings": { "show_dynamic_checkout": true, "show_gift_card_recipient": true } },
+        "description": { "type": "description", "settings": {} },
+        "share": { "type": "share", "settings": { "share_label": "Share" } }
       },
-      "block_order": [
-        "title",
-        "price",
-        "variant_picker",
-        "quantity_selector",
-        "buy_buttons",
-        "description",
-        "share"
-      ],
+      "block_order": [ "title", "price", "variant_picker", "quantity_selector", "buy_buttons", "description", "share" ],
       "settings": {
         "enable_sticky_info": true,
         "color_scheme": "scheme-4",
@@ -106,10 +69,5 @@
       }
     }
   },
-  "order": [
-    "main",
-    "disclosures",
-    "related-products",
-    "customer-reviews"
-  ]
+  "order": [ "main", "disclosures", "related-products", "customer-reviews" ]
 }
