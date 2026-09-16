@@ -42,12 +42,10 @@
             "show_gift_card_recipient": true
           }
         },
-        "product_category_metafields": {
-          "type": "product_category_metafields",
+        "custom_liquid_JTMmgh": {
+          "type": "custom_liquid",
           "settings": {
-            "metafield_namespace": "custom",
-            "show_description": true,
-            "description_heading": "Description"
+            "custom_liquid": ""
           }
         },
         "share": {
@@ -58,13 +56,13 @@
         }
       },
       "block_order": [
-        "judge_me_reviews_preview_badge_MjtNnY",
         "title",
+        "judge_me_reviews_preview_badge_MjtNnY",
         "price",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
-        "product_category_metafields",
+        "custom_liquid_JTMmgh",
         "share"
       ],
       "settings": {
@@ -82,6 +80,7 @@
         "padding_top": 48,
         "padding_bottom": 48
       }
+    },
     "disclosures": {
       "type": "disclosures",
       "settings": {
@@ -107,7 +106,7 @@
         "image_shape": "default",
         "show_secondary_image": true,
         "show_vendor": false,
-        "show_rating": false,
+        "show_rating": true,
         "padding_top": 48,
         "padding_bottom": 48
       }
