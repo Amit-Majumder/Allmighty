@@ -42,10 +42,6 @@
             "show_gift_card_recipient": true
           }
         },
-        "description": {
-          "type": "description",
-          "settings": {}
-        },
         "share": {
           "type": "share",
           "settings": {
@@ -54,13 +50,12 @@
         }
       },
       "block_order": [
-        "title",
         "judge_me_reviews_preview_badge_MjtNnY",
+        "title",
         "price",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
-        "description",
         "share"
       ],
       "settings": {
@@ -77,6 +72,18 @@
         "enable_video_looping": false,
         "padding_top": 48,
         "padding_bottom": 48
+      }
+    },
+    "product-details": {
+      "type": "product-details-accordion",
+      "settings": {
+        "metafield_namespace": "custom",
+        "show_description": true,
+        "description_open": true,
+        "description_heading": "Description",
+        "color_scheme": "scheme-2",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "disclosures": {
@@ -132,6 +139,7 @@
   },
   "order": [
     "main",
+    "product-details",
     "disclosures",
     "related-products",
     "1789462945409d26d8"
