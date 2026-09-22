@@ -14,24 +14,24 @@
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
-        "announcement-bar-0": {
-          "type": "announcement",
-          "settings": {
-            "text": "Durga Puja Sale is Live",
-            "link": ""
-          }
-        },
         "announcement_X3FdkB": {
           "type": "announcement",
           "settings": {
-            "text": "Free Shipping on all orders above ₹999",
+            "text": "Free shipping on all orders above ₹999",
+            "link": ""
+          }
+        },
+        "announcement_LY7RbX": {
+          "type": "announcement",
+          "settings": {
+            "text": "Easy returns with mandatory unboxing video",
             "link": ""
           }
         }
       },
       "block_order": [
-        "announcement-bar-0",
-        "announcement_X3FdkB"
+        "announcement_X3FdkB",
+        "announcement_LY7RbX"
       ],
       "name": "Announcement Bar",
       "settings": {

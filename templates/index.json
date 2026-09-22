@@ -30,30 +30,10 @@
             "text_alignment_mobile": "center",
             "color_scheme": "scheme-4"
           }
-        },
-        "slide_tTUqTp": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/Durga_Puja_Sale-W.png",
-            "mobile_image": "shopify://shop_images/Durga_Puja_Sale-M.png",
-            "image_overlay_opacity": 0,
-            "heading": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "shopify://collections/all",
-            "button_style_secondary": false,
-            "show_text_box": true,
-            "box_align": "middle-center",
-            "text_alignment": "center",
-            "text_alignment_mobile": "center",
-            "color_scheme": "scheme-4"
-          }
         }
       },
       "block_order": [
-        "slide_GE9Pmt",
-        "slide_tTUqTp"
+        "slide_GE9Pmt"
       ],
       "settings": {
         "layout": "full_bleed",
@@ -98,7 +78,7 @@
           "settings": {
             "icon": "shipping",
             "title": "Free Shipping",
-            "text": "All orders above ₹999"
+            "text": "Orders above ₹999"
           }
         },
         "p-3": {
