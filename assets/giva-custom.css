@@ -1285,6 +1285,23 @@ slideshow-component .slideshow.banner.banner--small {
   margin: 0;
 }
 
+.giva-footer__powered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: rgba(var(--color-foreground), 0.7);
+}
+
+.giva-footer__powered a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.giva-footer__powered a:hover {
+  color: rgb(var(--color-foreground));
+}
+
 .giva-footer__copyright .policies a {
   color: rgba(var(--color-foreground), 0.7);
   text-decoration: none;
@@ -1328,6 +1345,10 @@ slideshow-component .slideshow.banner.banner--small {
 
   .giva-footer__copyright {
     justify-content: flex-start;
+  }
+
+  .giva-footer__powered {
+    flex: 1 1 auto;
   }
 
   .giva-footer__bottom-right {
